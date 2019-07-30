@@ -1,0 +1,90 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 2,
+            "value": "#You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
+          },
+          {
+            "line": 3,
+            "value": "#By the help of the Bonigarcia’s webdriver manager, tests will run with the selected browser"
+          }
+        ],
+        "line": 5,
+        "name": "Successful login with correct credentials",
+        "description": "",
+        "id": "login-functionality-tests;successful-login-with-correct-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12733210100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to login page with \"Chrome\" browser",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chrome",
+                  "offset": 35
+                }
+              ],
+              "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 168357400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters following credentials for login",
+            "match": {
+              "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Luke",
+                  "Skywalker"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60344000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on the login",
+            "match": {
+              "location": "WebScenarios.user_clicks_on_the_login()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality tests",
+    "description": "",
+    "id": "login-functionality-tests",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/features/test1.feature"
+  }
+]

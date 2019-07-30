@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 2,
+            "value": "#You can select a browser as chrome\" or \"firefox\" by simply entering your choice to properties/config.properties file"
+          },
+          {
+            "line": 3,
+            "value": "#By the help of the Bonigarcia’s webdriver manager, tests will run with the selected browser"
+          }
+        ],
+        "line": 5,
+        "name": "Successful login with correct credentials",
+        "description": "",
+        "id": "login-functionality-tests;successful-login-with-correct-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User navigates to login page with \"Chrome\" browser",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User enters following credentials for login",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "Luke",
+                  "Skywalker"
+                ],
+                "line": 10
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User clicks on the login",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User should see \"Hello Luke\" message",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality tests",
+    "description": "",
+    "id": "login-functionality-tests",
+    "keyword": "Feature",
+    "uri": "src/test/java/resources/features/test.feature"
+  }
+]
