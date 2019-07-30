@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 31 00:45:36 EET 2019</td>
+<td>Started on:</td><td>Wed Jul 31 01:37:39 EET 2019</td>
 </tr>
-<tr><td>Total time:</td><td>141 seconds (141711 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23929 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.MainRunner_Test.feature()'><b>feature</b><br>Test class: runners.MainRunner_Test<br>Test method: Runs Cucumber Feature<br>Parameters: Create New Employee Data functionality tests</td>
-<td><div><pre>cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: exactRepeater(employee in employees) didn&apos;t have any matching elements at this place in the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td title='runners.MainRunner_Test.feature()'><b>feature</b><br>Test class: runners.MainRunner_Test<br>Test method: Runs Cucumber Feature<br>Parameters: creates a new user</td>
+<td><div><pre>cucumber.runtime.CucumberException: org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=75.0.3770.142)
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;DESKTOP-U9KGDGS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51148}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f60bc9bcd4964fff3c9008819eac22c
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -107,23 +109,35 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: exactRepeater(employee in employees) didn&apos;t have any matching elements at this place in the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=75.0.3770.142)
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;DESKTOP-U9KGDGS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: RemoteWebDriver
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElements(ByAngular.java:177)
-	at com.paulhammant.ngwebdriver.ByAngularRepeater.findElements(ByAngularRepeater.java:6)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:307)
-	at stepDefinitions.WebScenarios.user_should_see_something_in_the_employees_list(WebScenarios.java:132)
-	at ?.Then User should see &quot;Honey Bunny&quot; in the employees list(src/test/java/resources/features/createFunctionality.feature:82)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1407167674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1407167674'><pre>cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: exactRepeater(employee in employees) didn&apos;t have any matching elements at this place in the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51148}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f60bc9bcd4964fff3c9008819eac22c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:931)
+	at stepDefinitions.WebScenarios.user_should_see_the_alert_message(WebScenarios.java:215)
+	at ?.Then User should see the alert message(src/test/java/resources/features/test.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1730182538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1730182538'><pre>cucumber.runtime.CucumberException: org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=75.0.3770.142)
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;DESKTOP-U9KGDGS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51148}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f60bc9bcd4964fff3c9008819eac22c
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -150,19 +164,29 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: exactRepeater(employee in employees) didn&apos;t have any matching elements at this place in the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=75.0.3770.142)
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;DESKTOP-U9KGDGS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: RemoteWebDriver
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElements(ByAngular.java:177)
-	at com.paulhammant.ngwebdriver.ByAngularRepeater.findElements(ByAngularRepeater.java:6)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:307)
-	at stepDefinitions.WebScenarios.user_should_see_something_in_the_employees_list(WebScenarios.java:132)
-	at ?.Then User should see &quot;Honey Bunny&quot; in the employees list(src/test/java/resources/features/createFunctionality.feature:82)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51148}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f60bc9bcd4964fff3c9008819eac22c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:931)
+	at stepDefinitions.WebScenarios.user_should_see_the_alert_message(WebScenarios.java:215)
+	at ?.Then User should see the alert message(src/test/java/resources/features/test.feature:23)
 </pre></div></td>
-<td>141</td>
+<td>23</td>
 <td>runners.MainRunner_Test@4cf777e8</td></tr>
 </table><p>
 </body>

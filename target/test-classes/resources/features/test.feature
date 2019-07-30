@@ -9,9 +9,17 @@ Feature: creates a new user
       | username | password  | 
       | Luke     | Skywalker | 
      When User clicks on the login
+ 
   
-  Scenario: Successfully creates a new user
+  Scenario: Using incorrect date format
   
     Given User should be at home page
       And User clicks on the Create button
+      And User should be in new user page
+      And User enters following details for new user
+      | First_name | Last_name | Start_date | Email						 | 
+      | Andy       | Dufresne      | 94-19-21 |  pulpfiction@gmail.com     | 
+     When User clicks on the Add button
+     Then User should see the alert message
+      And User logs out
   

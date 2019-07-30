@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 30, 2019 09:20:08 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 31, 2019 01:36:29 AM</span>
 				</a>
 			</li>
 			<li>
@@ -79,6 +79,7 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -159,10 +160,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>4</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>8</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='10%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='10%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -179,15 +180,15 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>creates a new user</span>
-						<span class='test-time'>Jul 30, 2019 09:20:08 PM</span>
+						<span class='test-time'>Jul 31, 2019 01:36:29 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 7s+835ms</span>
+	<span class='duration right label'>0h 0m 12s+870ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Successfully creates a new user</span>
+		<span class="desc-text">Using incorrect date format</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
@@ -215,34 +216,82 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='6' class='node then pass' status='pass'>
+		<li test-id='6' class='node given pass' status='pass'>
 			
-			<b>Then</b>
+			<b>Given</b>
 			
-			<span class="bdd-step-name">Then User should be at home page</span>
+			<span class="bdd-step-name">Given User should be at home page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='7' class='node and fail' status='fail'>
+		<li test-id='7' class='node and pass' status='pass'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And User clicks on the Create button</span>
-				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: cssContainingText(a#bAdd.subButtonCreate) didn't have any matching elements at this place in the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User should be in new user page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='9' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User enters following details for new user</span>
+				<div class='pre'><table><tr><td>First_name</td><td>Last_name</td><td>Start_date</td><td>Email</td></tr><tr><td>Andy</td><td>Dufresne</td><td>94-19-21</td><td>pulpfiction@gmail.com</td></tr></table></div>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='10' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on the Add button</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then User should see the alert message</span>
+				<div class='pre'><pre>org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=75.0.3770.142)
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)
-	at com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at stepDefinitions.WebScenarios.user_clicks_on_the_create_button(WebScenarios.java:133)
-	at ?.And User clicks on the Create button(src/test/java/resources/features/test.feature:13)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6949b1c8f2f2fd71419dc58fa9853321
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:931)
+	at stepDefinitions.WebScenarios.user_should_see_the_alert_message(WebScenarios.java:214)
+	at ?.Then User should see the alert message(src/test/java/resources/features/test.feature:23)
 </pre></div>
-				<div class='pre'>Taking a screenshot!</div>
-				<div class='pre'><br></div>
-				<div class='pre'><a target="_blank", href=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Tue_Jul_30_21_20_16_EET_2019.jpg><img src=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Tue_Jul_30_21_20_16_EET_2019.jpg height=200 width=300></img></a></div>
+			
+		</li>
+		<li test-id='12' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User logs out</span>
+				<div class='pre'>skipped</div>
 			
 		</li>
 	</ul>
@@ -302,7 +351,7 @@ Driver info: driver.version: RemoteWebDriver
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-name'>org.openqa.selenium.NoAlertPresentException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -317,19 +366,29 @@ Driver info: driver.version: RemoteWebDriver
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 30, 2019 09:20:15 PM</td>
-                                                        <td class='linked' test-id='7'>creates a new user.Successfully creates a new user.And User clicks on the Create button</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: cssContainingText(a#bAdd.subButtonCreate) didn't have any matching elements at this place in the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                                                        <td>Jul 31, 2019 01:36:42 AM</td>
+                                                        <td class='linked' test-id='11'>creates a new user.Using incorrect date format.Then User should see the alert message</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=75.0.3770.142)
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)
-	at com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at stepDefinitions.WebScenarios.user_clicks_on_the_create_button(WebScenarios.java:133)
-	at ?.And User clicks on the Create button(src/test/java/resources/features/test.feature:13)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6949b1c8f2f2fd71419dc58fa9853321
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:931)
+	at stepDefinitions.WebScenarios.user_should_see_the_alert_message(WebScenarios.java:214)
+	at ?.Then User should see the alert message(src/test/java/resources/features/test.feature:23)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -368,25 +427,25 @@ Driver info: driver.version: RemoteWebDriver
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 30, 2019 09:20:08 PM</div>
+					<div class='panel-lead'>Jul 31, 2019 01:36:29 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 30, 2019 09:20:17 PM</div>
+			 		<div class='panel-lead'>Jul 31, 2019 01:36:52 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>8,737ms</div>
+					<div class='panel-lead'>23,218ms</div>
 				</div>
 			</div>
 		</div>
@@ -416,14 +475,14 @@ Driver info: driver.version: RemoteWebDriver
 				infoChild: 0,
 				exceptionsChild: 1,
 				
-				passGrandChild: 4,
+				passGrandChild: 8,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 1,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 2,
 			};
 		</script>
 		

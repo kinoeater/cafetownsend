@@ -133,7 +133,7 @@ public class Base_Page extends DriverFactory{
 	   public static void actionMoveAndClick(WebElement element) throws Exception {
 	    Actions ob = new Actions(driver);
 	    try {
-	     Thread.sleep(5000);
+	     Thread.sleep(2000);
 	     ob.moveToElement(element).click().build().perform();
 	     System.out.println("Successfully Action Moved and Clicked on the WebElement, using locator: " + "<" + element.toString() + ">");
 	    } catch (StaleElementReferenceException elementUpdated) {

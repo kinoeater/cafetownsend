@@ -77,9 +77,19 @@ Feature: Create New Employee Data functionality tests
       And User should be in new user page
       And User enters following details for new user
       | First_name | Last_name | Start_date | Email						 | 
-      | Honey      | Bunny     | 1994-10-21 |  pulpfiction@gmail.com     | 
+      | oli        | moli      | 1994-10-21 |  pulpfiction@gmail.com     | 
      When User hits enter
-     Then User should see "Honey Bunny" in the employees list
+     Then User should see "ali veli" in the employees list
       And User logs out
+      
+  Scenario: Using incorrect date format
   
-  
+    Given User should be at home page
+      And User clicks on the Create button
+      And User should be in new user page
+      And User enters following details for new user
+      | First_name | Last_name | Start_date | Email						 | 
+      | Andy       | Dufresne      | 94-19-21 |  pulpfiction@gmail.com     | 
+     When User clicks on the Add button
+     Then User should see the alert message
+      And User logs out

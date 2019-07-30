@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\musta\AppData\Local\Temp\testng-eclipse-134984689\testng-customsuite.xml</span>
+                    <span>C:\Users\musta\AppData\Local\Temp\testng-eclipse--1439456254\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="runners.MainRunner_Test" hash-for-method="feature(Create New Employee Data functionality tests)">feature(Create New Employee Data functionality tests)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="runners.MainRunner_Test" hash-for-method="feature(creates a new user)">feature(creates a new user)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -125,15 +125,17 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Create New Employee Data functionality tests)">
-                  </a> <!-- feature(Create New Employee Data functionality tests) -->
+                  <a name="feature(creates a new user)">
+                  </a> <!-- feature(creates a new user) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Create New Employee Data functionality tests)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: exactRepeater(employee in employees) didn&apos;t have any matching elements at this place in the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                  <span class="parameters">(creates a new user)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=75.0.3770.142)
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;DESKTOP-U9KGDGS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51148}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f60bc9bcd4964fff3c9008819eac22c
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -160,17 +162,27 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: exactRepeater(employee in employees) didn&apos;t have any matching elements at this place in the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=75.0.3770.142)
 Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
 System info: host: &apos;DESKTOP-U9KGDGS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: driver.version: RemoteWebDriver
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElements(ByAngular.java:177)
-	at com.paulhammant.ngwebdriver.ByAngularRepeater.findElements(ByAngularRepeater.java:6)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:307)
-	at stepDefinitions.WebScenarios.user_should_see_something_in_the_employees_list(WebScenarios.java:132)
-	at ✽.Then User should see &quot;Honey Bunny&quot; in the employees list(src/test/java/resources/features/createFunctionality.feature:82)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51148}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9f60bc9bcd4964fff3c9008819eac22c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:931)
+	at stepDefinitions.WebScenarios.user_should_see_the_alert_message(WebScenarios.java:215)
+	at ✽.Then User should see the alert message(src/test/java/resources/features/test.feature:23)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -182,7 +194,7 @@ Driver info: driver.version: RemoteWebDriver
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\musta\AppData\Local\Temp\testng-eclipse-134984689\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\musta\AppData\Local\Temp\testng-eclipse--1439456254\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -258,12 +270,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'runners.MainRunner_Test')
-data.setCell(0, 3, 141002);
+data.setCell(0, 3, 23240);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -297,16 +309,16 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">feature(Create New Employee Data functionality tests)</span>
-                <span class="method-start">287 ms</span>
+                <span class="method-name">feature(creates a new user)</span>
+                <span class="method-start">285 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">writeExtentReport</span>
-                <span class="method-start">141296 ms</span>
+                <span class="method-start">23533 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">141345 ms</span>
+                <span class="method-start">23574 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

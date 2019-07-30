@@ -83,6 +83,7 @@ public class test1 {
 		Thread.sleep(3000);
 		
 		driver.switchTo().alert().accept();
+		driver.switchTo().alert().getText();
 		Thread.sleep(3000);
 		/*if (employeeName.contentEquals(input)) {
 			

@@ -126,32 +126,34 @@ public class WebScenarios extends Page_Objects{
 	    }
 
 	    @Then("^User should see \"([^\"]*)\" in the employees list$")
-	    public void user_should_see_something_in_the_employees_list(String alfred) throws Throwable {
+	    public void user_should_see_something_in_the_employees_list(String NameToCheck) throws Throwable {
 	    	ngWebdriver.waitForAngularRequestsToFinish();
 	    	
 	    	List<WebElement> employees =driver.findElements(ByAngular.exactRepeater("employee in employees"));
 	
 	    	for(WebElement employee :employees ) {
 				
-	    		    String name = employee.getText();
-	    		    
-	    		    try {    		            
+	    		    try {    		        
+	    		    	
 	    		        	    				
-    	    				System.out.println(alfred + " is successfully added!");
+    	    				System.out.println(NameToCheck + " is successfully added!");
     	    				String exportedName = employee.getText();
-    	    				Assert.assertTrue(exportedName.equalsIgnoreCase(alfred));
+    	    				System.out.println("Bu sistemden alınan=  "+ exportedName);
+    	    			// 	Assert.assertTrue(exportedName.replaceAll("\\s+","").equalsIgnoreCase(NameToCheck.replaceAll("\\s+","")));
+    	    				Assert.assertTrue(exportedName.equalsIgnoreCase(NameToCheck));
+    	    			//	Assert.assertTrue(exportedName.contains(NameToCheck));
     	    				break;  			
 	    		       
 	    		    }
 	    		    
 	    		    catch (AssertionError error) {
 	    		    	
-	    		    	Assert.fail("Could not find the " + alfred);
+	    		    	Assert.fail("Could not find the " + NameToCheck);
 	    		    }
 	    		    
 	    		    catch (Exception e) {
 
-	    	            Assert.fail("Could not find the " + alfred);
+	    	            Assert.fail("Could not find the " + NameToCheck);
 	    	        }	    
 	    }
 					
@@ -196,6 +198,25 @@ public class WebScenarios extends Page_Objects{
 	    @When("^User hits enter$")
 	    public void user_hits_enter() throws Throwable {
 	    	driver.findElement(createEmail).sendKeys(Keys.ENTER);
+	    }
+	    
+	    @Then("^User should see \"([^\"]*)\" in the alert message$")
+	    public void user_should_see_the_alert_message(String expectedAlertMessage) throws Throwable {
+	    	Thread.sleep(5000);
+	    	String actualAlertMessage = driver.switchTo().alert().getText();
+	    	
+	    	Assert.assertTrue(actualAlertMessage.equalsIgnoreCase(expectedAlertMessage));
+	    	
+	    }
+	    
+	    @Then("^User should see the alert message$")
+	    public void user_should_see_the_alert_message() throws Throwable {
+	    	
+	    	
+	    	driver.switchTo().alert().accept();
+//	    	String actualAlertMessage = driver.switchTo().alert().getText();
+//	    	System.out.println(actualAlertMessage);
+	  //  	Assert.assertTrue(actualAlertMessage.equalsIgnoreCase(expectedAlertMessage));
 	    }
 
 	    /*
