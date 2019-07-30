@@ -10,7 +10,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import pageObjects.Base_Page;
 
-@CucumberOptions(features = { "src/test/java/resources/features/test1.feature" }, glue = {
+@CucumberOptions(features = { "src/test/java/resources/features/createFunctionality.feature" }, glue = {
 		"stepDefinitions" }, monochrome = true, tags = {}, 
 				plugin = { "pretty", "html:target/cucumber", "json:target/cucumber.json",
 				"com.cucumber.listener.ExtentCucumberFormatter:output/report.html" })

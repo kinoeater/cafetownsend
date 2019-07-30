@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 30, 2019 03:10:36 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 30, 2019 09:20:08 PM</span>
 				</a>
 			</li>
 			<li>
@@ -178,16 +178,16 @@
 				
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Login functionality tests</span>
-						<span class='test-time'>Jul 30, 2019 03:10:36 PM</span>
+						<span class='test-name'>creates a new user</span>
+						<span class='test-time'>Jul 30, 2019 09:20:08 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 8s+383ms</span>
+	<span class='duration right label'>0h 0m 7s+835ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Successful login with correct credentials</span>
+		<span class="desc-text">Successfully creates a new user</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
@@ -219,7 +219,7 @@
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User should see greeting message</span>
+			<span class="bdd-step-name">Then User should be at home page</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -227,35 +227,22 @@
 			
 			<b>And</b>
 			
-			<span class="bdd-step-name">And User logs out</span>
-				<div class='pre'><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <p class="main-button" ng-click="logout()">...</p> is not clickable at point (930, 245). Other element would receive the click: <div class="main-view-wrapper main-view-wrapper-loggedIn" ng-class="{login:'main-view-wrapper-loggedIn',
-      employees:'main-view-wrapper-employees',
-      edit:'main-view-wrapper-edit',
-      create:'main-view-wrapper-create'}[viewState.current]">...</div>
-  (Session info: chrome=75.0.3770.142)
+			<span class="bdd-step-name">And User clicks on the Create button</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: cssContainingText(a#bAdd.subButtonCreate) didn't have any matching elements at this place in the DOM
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: efe6bfdd691a93817b116f87da0284d9
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at stepDefinitions.WebScenarios.user_logs_out(WebScenarios.java:81)
-	at ?.And User logs out(src/test/java/resources/features/test1.feature:13)
-</textarea></div>
+Driver info: driver.version: RemoteWebDriver
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)
+	at com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at stepDefinitions.WebScenarios.user_clicks_on_the_create_button(WebScenarios.java:133)
+	at ?.And User clicks on the Create button(src/test/java/resources/features/test.feature:13)
+</pre></div>
 				<div class='pre'>Taking a screenshot!</div>
 				<div class='pre'><br></div>
-				<div class='pre'><a target="_blank", href=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Tue_Jul_30_15_10_44_EET_2019.jpg><img src=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Tue_Jul_30_15_10_44_EET_2019.jpg height=200 width=300></img></a></div>
+				<div class='pre'><a target="_blank", href=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Tue_Jul_30_21_20_16_EET_2019.jpg><img src=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Tue_Jul_30_21_20_16_EET_2019.jpg height=200 width=300></img></a></div>
 			
 		</li>
 	</ul>
@@ -315,7 +302,7 @@ Session ID: efe6bfdd691a93817b116f87da0284d9
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.ElementClickInterceptedException</span>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -330,33 +317,20 @@ Session ID: efe6bfdd691a93817b116f87da0284d9
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 30, 2019 03:10:44 PM</td>
-                                                        <td class='linked' test-id='7'>Login functionality tests.Successful login with correct credentials.And User logs out</td>
-                                                        <td><pre><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <p class="main-button" ng-click="logout()">...</p> is not clickable at point (930, 245). Other element would receive the click: <div class="main-view-wrapper main-view-wrapper-loggedIn" ng-class="{login:'main-view-wrapper-loggedIn',
-      employees:'main-view-wrapper-employees',
-      edit:'main-view-wrapper-edit',
-      create:'main-view-wrapper-create'}[viewState.current]">...</div>
-  (Session info: chrome=75.0.3770.142)
+                                                        <td>Jul 30, 2019 09:20:15 PM</td>
+                                                        <td class='linked' test-id='7'>creates a new user.Successfully creates a new user.And User clicks on the Create button</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: cssContainingText(a#bAdd.subButtonCreate) didn't have any matching elements at this place in the DOM
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: efe6bfdd691a93817b116f87da0284d9
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at stepDefinitions.WebScenarios.user_logs_out(WebScenarios.java:81)
-	at ?.And User logs out(src/test/java/resources/features/test1.feature:13)
-</textarea></pre></td>
+Driver info: driver.version: RemoteWebDriver
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)
+	at com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at stepDefinitions.WebScenarios.user_clicks_on_the_create_button(WebScenarios.java:133)
+	at ?.And User clicks on the Create button(src/test/java/resources/features/test.feature:13)
+</pre></pre></td>
                                                     </tr>
                                         </tbody>
                                     </table>
@@ -400,19 +374,19 @@ Session ID: efe6bfdd691a93817b116f87da0284d9
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 30, 2019 03:10:36 PM</div>
+					<div class='panel-lead'>Jul 30, 2019 09:20:08 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 30, 2019 03:10:45 PM</div>
+			 		<div class='panel-lead'>Jul 30, 2019 09:20:17 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>9,259ms</div>
+					<div class='panel-lead'>8,737ms</div>
 				</div>
 			</div>
 		</div>

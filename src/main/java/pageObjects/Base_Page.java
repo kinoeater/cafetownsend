@@ -91,12 +91,12 @@ public class Base_Page extends DriverFactory{
 	   /**********************************************************************************
 	    **Click Method
 	    **********************************************************************************/
-	   public void waitAndClickElement(WebElement element) throws InterruptedException, IOException {
+	   public static void waitAndClickElement(WebElement element) throws InterruptedException, IOException {
 	    boolean clicked = false;
 	    int attempts = 0;
 	    while (!clicked && attempts < 10) {
 	     try {
-	      this.wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+	    	 element.click();
 	      System.out.println("Successfully clicked on the WebElement: " + "<" + element.toString() + ">");
 	      clicked = true;
 	     } catch (Exception e) {
@@ -130,10 +130,10 @@ public class Base_Page extends DriverFactory{
 	     Assert.fail("Unable to Action Move and Click on the WebElement, Exception: " + e.getMessage());
 	    }
 	   }
-	   public void actionMoveAndClick(WebElement element) throws Exception {
+	   public static void actionMoveAndClick(WebElement element) throws Exception {
 	    Actions ob = new Actions(driver);
 	    try {
-	     this.wait.until(ExpectedConditions.elementToBeClickable(element)).isEnabled();
+	     Thread.sleep(5000);
 	     ob.moveToElement(element).click().build().perform();
 	     System.out.println("Successfully Action Moved and Clicked on the WebElement, using locator: " + "<" + element.toString() + ">");
 	    } catch (StaleElementReferenceException elementUpdated) {
@@ -153,9 +153,8 @@ public class Base_Page extends DriverFactory{
 	   /**********************************************************************************
 	    **Send keys method
 	    **********************************************************************************/
-	   public void sendKeysToWebElement(WebElement element, String textToSend) throws Exception {
-	    try {
-	     this.WaitUntilWebElementIsVisible(element);
+	   public  static void sendKeysToWebElement(WebElement element, String textToSend) throws Exception {
+	    try {	     
 	     element.clear();
 	     element.sendKeys(textToSend);
 	     System.out.println("Successfully Sent the following keys: '" + textToSend + "' to element: " + "<" + element.toString() + ">");
@@ -168,9 +167,9 @@ public class Base_Page extends DriverFactory{
 	   /**********************************************************************************
 	    **For waiting elements
 	    **********************************************************************************/
-	   public boolean WaitUntilWebElementIsVisible(WebElement element) {
+	   public static boolean WaitUntilWebElementIsVisible(WebElement element) {
 	    try {
-	     this.wait.until(ExpectedConditions.visibilityOf(element));
+	     wait.until(ExpectedConditions.visibilityOf(element));
 	     System.out.println("WebElement is visible using locator: " + "<" + element.toString() + ">");
 	     return true;
 	    } catch (Exception e) {
@@ -216,8 +215,7 @@ public class Base_Page extends DriverFactory{
 	        try {
 
 	          
-	            WebElement myDynamicElement = (new WebDriverWait(driver, 30))
-	                .until(ExpectedConditions.presenceOfElementLocated(locator));
+	            WebElement myDynamicElement = driver.findElement(locator);
 
 	            String text = myDynamicElement.getText();
 	            System.out.println(text);

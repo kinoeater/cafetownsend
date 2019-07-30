@@ -17,30 +17,34 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class test1 {
 
-    public static void main( String[] args ) throws InterruptedException
+    public static void main( String[] args ) throws Exception
     {
        
     	WebDriverManager.chromedriver().setup();
     	WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		NgWebDriver ngWebdriver = new NgWebDriver((JavascriptExecutor) driver);
 		driver.get("http://cafetownsend-angular-rails.herokuapp.com/login");
 		ngWebdriver.waitForAngularRequestsToFinish();
+	//	ngWebdriver.waitForAngular2RequestsToFinish();
 		
 		driver.findElement(ByAngular.model("user.name")).sendKeys("Luke");
+		ngWebdriver.waitForAngularRequestsToFinish();
 		driver.findElement(ByAngular.model("user.password")).sendKeys("Skywalker");
+		ngWebdriver.waitForAngularRequestsToFinish();
 	//	driver.findElement(ByAngular.buttonText("Login"));
 		
 		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
+		ngWebdriver.waitForAngularRequestsToFinish();
 	//	Thread.sleep(5000);
-		System.out.println(driver.findElement(ByAngular.cssContainingText("p.main-button", "Logout")).isDisplayed());
-		System.out.println(driver.findElement(ByAngular.cssContainingText("p.main-button", "Logout")).isEnabled());
-		System.out.println(driver.findElement(ByAngular.cssContainingText("p.main-button", "Logout")).getText());
-		WebElement element = driver.findElement(ByAngular.cssContainingText("p.main-button", "Logout"));
-		Actions actions = new Actions(driver);
-		actions.moveToElement(element).click().build().perform();
+//		System.out.println(driver.findElement(ByAngular.cssContainingText("p.main-button", "Logout")).isDisplayed());
+//		System.out.println(driver.findElement(ByAngular.cssContainingText("p.main-button", "Logout")).isEnabled());
+//		System.out.println(driver.findElement(ByAngular.cssContainingText("p.main-button", "Logout")).getText());
+	//	WebElement element = driver.findElement(ByAngular.cssContainingText("p.main-button", "Logout"));
+	//	Actions actions = new Actions(driver);
+	//	actions.moveToElement(element).click().build().perform();
 	//	driver.findElement(ByAngular.cssContainingText("p.main-button", "Logout")).click();
 		
 	//	driver.findElement(ByAngular.model("createEmployee()")).click();
@@ -49,31 +53,51 @@ public class test1 {
 		
 		
 	//	System.out.println(driver.getPageSource());
-	// **	driver.findElement(ByAngular.cssContainingText("a#bAdd.subButton", "Create")).click(); 
 		
-	/*	List<WebElement> employees =driver.findElements(ByAngular.exactRepeater("employee in employees"));
+	//	Actions actions = new Actions(driver);
+	//	actions.moveToElement(driver.findElement(ByAngular.cssContainingText("a#bAdd.subButton", "Create"))).click().build().perform();
+		
+	 //   driver.findElement(ByAngular.cssContainingText("a#bAdd.subButton", "Create")).click(); 
+	//	Base_Page.actionMoveAndClick(driver.findElement(ByAngular.cssContainingText("a#bAdd.subButton", "Create")));
+
+		
+		List<WebElement> employees =driver.findElements(ByAngular.exactRepeater("employee in employees"));
 		
 		Actions actions = new Actions(driver);
 		
-		String input = "Andy Dufresne";
+	//	String input = "Andy Dufresne";
+		By deleteButton = ByAngular.cssContainingText("#bDelete.subButton", "Delete");
+		ngWebdriver.waitForAngularRequestsToFinish();
 	
 		for(int i=0;i<employees.size();i++) {
 			
-		String employeeName = employees.get(i).getText();
-		if (employeeName.contentEquals(input)) {
+	//	String employeeName = employees.get(i).getText();
+			System.out.println(employees.size());
+			
+		actions.click(employees.get(i)).build().perform();
+		
+
+		
+		Thread.sleep(5000);
+		driver.findElement(deleteButton).click();
+		Thread.sleep(3000);
+		
+		driver.switchTo().alert().accept();
+		Thread.sleep(3000);
+		/*if (employeeName.contentEquals(input)) {
 			
 			actions.doubleClick(employees.get(i)).perform();
-		}
-		}   */
+		
+		}  */ 
 		
 	
-	
+    }
 		
 		
 	//	driver.findElement(ByAngular.cssContainingText("a#bAdd.subButton", "Edit")).click();
 		
 		
 	
-	 driver.quit();
+	driver.quit();
     }
 }

@@ -16,24 +16,12 @@
         "line": 5,
         "name": "Successful login with correct credentials",
         "description": "",
-        "id": "login-functionality-tests;successful-login-with-correct-credentials",
-        "after": [
-          {
-            "result": {
-              "duration": 665786300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "WebScenarios.tearDownAndScreenshotOnFailure(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 6536785600,
+              "duration": 7022028700,
               "status": "passed"
             },
             "line": 7,
@@ -51,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 220698700,
+              "duration": 175993399,
               "status": "passed"
             },
             "line": 8,
@@ -79,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 79845400,
+              "duration": 113290800,
               "status": "passed"
             },
             "line": 11,
@@ -88,25 +76,132 @@
               "location": "WebScenarios.user_clicks_on_the_login()"
             },
             "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Successfully creates a new user",
+        "description": "",
+        "id": "login-functionality-tests;successfully-creates-a-new-user",
+        "after": [
+          {
+            "result": {
+              "duration": 650873900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WebScenarios.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35878499,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should be at home page",
+            "match": {
+              "location": "WebScenarios.user_should_be_at_home_page()"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 62383800,
+              "duration": 5833791701,
               "status": "passed"
             },
-            "line": 12,
-            "name": "User should see greeting message",
+            "line": 16,
+            "name": "User clicks on the Create button",
             "match": {
-              "location": "WebScenarios.user_should_see_greeting_message()"
+              "location": "WebScenarios.user_clicks_on_the_create_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174356500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User should be in new user page",
+            "match": {
+              "location": "WebScenarios.user_should_be_in_new_user_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 388438000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enters following details for new user",
+            "match": {
+              "location": "WebScenarios.user_enters_following_details_for_new_user(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "First_name",
+                  "Last_name",
+                  "Start_date",
+                  "Email"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "Mustafa",
+                  "ttt",
+                  "1933-03-14",
+                  "Pennyworth@dark.com"
+                ],
+                "line": 20
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5171115799,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User clicks on the Add button",
+            "match": {
+              "location": "WebScenarios.user_clicks_on_the_add_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1579617999,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User should see \"Alfred Pennyworth\" in the employees list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Alfred Pennyworth",
+                  "offset": 17
+                }
+              ],
+              "location": "WebScenarios.user_should_see_something_in_the_employees_list(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 148079900,
+              "duration": 5201365701,
               "status": "passed"
             },
-            "line": 13,
+            "line": 23,
             "name": "User logs out",
             "match": {
               "location": "WebScenarios.user_logs_out()"
@@ -120,6 +215,6 @@
     "description": "",
     "id": "login-functionality-tests",
     "keyword": "Feature",
-    "uri": "src/test/java/resources/features/test1.feature"
+    "uri": "src/test/java/resources/features/createFunctionality.feature"
   }
 ]

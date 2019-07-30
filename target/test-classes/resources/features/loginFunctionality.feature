@@ -3,13 +3,15 @@ Feature: Login functionality tests
 #By the help of the Bonigarcia’s webdriver manager, tests will run with the selected browser
 
   Scenario: Successful login with correct credentials
-  
+
     Given User navigates to login page with "Chrome" browser
-      And User enters following credentials for login
+     And User enters following credentials for login
       | username | password  | 
       | Luke     | Skywalker | 
      When User clicks on the login
-     Then User should see "Hello Luke" message
+      Then User should be at home page
+     And User logs out
+  
   
   Scenario: Unsuccessful login with incorrect username
   
@@ -18,7 +20,7 @@ Feature: Login functionality tests
       | username | password  | 
       | John     | Skywalker | 
      When User clicks on the login
-     Then User should see "Invalid username or password!" message
+     Then User should see login error message 
   
   Scenario: Unsuccessful login with incorrect password
   
@@ -27,6 +29,4 @@ Feature: Login functionality tests
       | username | password | 
       | Luke     | Connor   | 
      When User clicks on the login
-     Then User should see "Invalid username or password!" message
-  
-  
+     Then User should see login error message

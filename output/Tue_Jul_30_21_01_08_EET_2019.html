@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 30, 2019 02:16:50 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 30, 2019 08:46:19 PM</span>
 				</a>
 			</li>
 			<li>
@@ -159,10 +159,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>5</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -178,16 +178,16 @@
 				
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Login functionality tests</span>
-						<span class='test-time'>Jul 30, 2019 02:16:50 PM</span>
+						<span class='test-name'>creates a new user</span>
+						<span class='test-time'>Jul 30, 2019 08:46:19 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 9s+163ms</span>
+	<span class='duration right label'>0h 0m 7s+694ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
-		<span class="desc-text">Successful login with correct credentials</span>
+		<span class="desc-text">Successfully creates a new user</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node given pass' status='pass'>
@@ -215,40 +215,42 @@
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='6' class='node then fail' status='fail'>
+		<li test-id='6' class='node then pass' status='pass'>
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then User should see greeting message</span>
-				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/p\[\@id\=\'greetings\'\]"}
-  (Session info: chrome=75.0.3770.142)
+			<span class="bdd-step-name">Then User should be at home page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='7' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given User should be at home page</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node and fail' status='fail'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And User clicks on the Create button</span>
+				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: cssContainingText(a#bAdd.subButtonCreate) didn't have any matching elements at this place in the DOM
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61013}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d95b588733227c8a4c3e79fbf2bc59c4
-*** Element info: {Using=id, value=//p[@id='greetings']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
+Driver info: driver.version: RemoteWebDriver
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)
+	at com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at stepDefinitions.WebScenarios.user_should_see_greeting_message(WebScenarios.java:77)
-	at ?.Then User should see greeting message(src/test/java/resources/features/test1.feature:12)
+	at stepDefinitions.WebScenarios.user_clicks_on_the_create_button(WebScenarios.java:133)
+	at ?.And User clicks on the Create button(src/test/java/resources/features/test.feature:17)
 </pre></div>
 				<div class='pre'>Taking a screenshot!</div>
 				<div class='pre'><br></div>
-				<div class='pre'><a target="_blank", href=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Tue_Jul_30_14_16_59_EET_2019.jpg><img src=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Tue_Jul_30_14_16_59_EET_2019.jpg height=200 width=300></img></a></div>
+				<div class='pre'><a target="_blank", href=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Tue_Jul_30_20_46_27_EET_2019.jpg><img src=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Tue_Jul_30_20_46_27_EET_2019.jpg height=200 width=300></img></a></div>
 			
 		</li>
 	</ul>
@@ -323,33 +325,19 @@ Session ID: d95b588733227c8a4c3e79fbf2bc59c4
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 30, 2019 02:16:59 PM</td>
-                                                        <td class='linked' test-id='6'>Login functionality tests.Successful login with correct credentials.Then User should see greeting message</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#\/\/p\[\@id\=\'greetings\'\]"}
-  (Session info: chrome=75.0.3770.142)
+                                                        <td>Jul 30, 2019 08:46:26 PM</td>
+                                                        <td class='linked' test-id='8'>creates a new user.Successfully creates a new user.And User clicks on the Create button</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: cssContainingText(a#bAdd.subButtonCreate) didn't have any matching elements at this place in the DOM
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61013}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d95b588733227c8a4c3e79fbf2bc59c4
-*** Element info: {Using=id, value=//p[@id='greetings']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:365)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
+Driver info: driver.version: RemoteWebDriver
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)
+	at com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at stepDefinitions.WebScenarios.user_should_see_greeting_message(WebScenarios.java:77)
-	at ?.Then User should see greeting message(src/test/java/resources/features/test1.feature:12)
+	at stepDefinitions.WebScenarios.user_clicks_on_the_create_button(WebScenarios.java:133)
+	at ?.And User clicks on the Create button(src/test/java/resources/features/test.feature:17)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -388,25 +376,25 @@ Session ID: d95b588733227c8a4c3e79fbf2bc59c4
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 30, 2019 02:16:50 PM</div>
+					<div class='panel-lead'>Jul 30, 2019 08:46:19 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 30, 2019 02:17:00 PM</div>
+			 		<div class='panel-lead'>Jul 30, 2019 08:46:27 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>10,105ms</div>
+					<div class='panel-lead'>8,629ms</div>
 				</div>
 			</div>
 		</div>
@@ -436,7 +424,7 @@ Session ID: d95b588733227c8a4c3e79fbf2bc59c4
 				infoChild: 0,
 				exceptionsChild: 1,
 				
-				passGrandChild: 3,
+				passGrandChild: 5,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
