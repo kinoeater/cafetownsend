@@ -7,6 +7,7 @@ import java.util.Map;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -125,7 +126,7 @@ public class WebScenarios extends Page_Objects{
 	    }
 
 	    @Then("^User should see \"([^\"]*)\" in the employees list$")
-	    public void user_should_see_something_in_the_employees_list(String employeeName) throws Throwable {
+	    public void user_should_see_something_in_the_employees_list(String alfred) throws Throwable {
 	    	ngWebdriver.waitForAngularRequestsToFinish();
 	    	
 	    	List<WebElement> employees =driver.findElements(ByAngular.exactRepeater("employee in employees"));
@@ -133,21 +134,32 @@ public class WebScenarios extends Page_Objects{
 	    	for(WebElement employee :employees ) {
 				
 	    		    String name = employee.getText();
-	    		        
-	    			if (name.contains(employeeName)) {
-	    				
-	    				System.out.println(employeeName + " is successfully added!");
-	    				String exportedName = employee.getText();
-	    				Assert.assertTrue(exportedName.equalsIgnoreCase(employeeName));
-	    				break;
-	    			
-	    			}  
-	    			
+	    		    
+	    		    try {    		            
+	    		        	    				
+    	    				System.out.println(alfred + " is successfully added!");
+    	    				String exportedName = employee.getText();
+    	    				Assert.assertTrue(exportedName.equalsIgnoreCase(alfred));
+    	    				break;  			
+	    		       
+	    		    }
+	    		    
+	    		    catch (AssertionError error) {
+	    		    	
+	    		    	Assert.fail("Could not find the " + alfred);
+	    		    }
+	    		    
+	    		    catch (Exception e) {
+
+	    	            Assert.fail("Could not find the " + alfred);
+	    	        }	    
+	    }
+					
 	    	}
 	    	
+	 
 	    	
-	    	
-	    }
+	    
 
 	    @And("^User clicks on the Create button$")
 	    public void user_clicks_on_the_create_button() throws Throwable {
@@ -179,6 +191,11 @@ public class WebScenarios extends Page_Objects{
 	    	
 	    	}
 	      
+	    }
+	    
+	    @When("^User hits enter$")
+	    public void user_hits_enter() throws Throwable {
+	    	driver.findElement(createEmail).sendKeys(Keys.ENTER);
 	    }
 
 	    /*
