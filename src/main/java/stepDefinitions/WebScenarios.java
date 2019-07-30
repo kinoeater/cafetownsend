@@ -4,9 +4,12 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import com.paulhammant.ngwebdriver.ByAngular;
 import com.paulhammant.ngwebdriver.NgWebDriver;
@@ -41,7 +44,7 @@ public class WebScenarios extends Page_Objects{
 	    // Write code here that turns the phrase above into concrete actions
 		
 		
-		setup(browser);
+		goToLoginPage(browser);
 		/*		driver = getDriver(browser);
 		ngWebdriver = new NgWebDriver((JavascriptExecutor) driver);
 		driver.get("http://cafetownsend-angular-rails.herokuapp.com/login");
@@ -62,16 +65,29 @@ public class WebScenarios extends Page_Objects{
     
 	}
 
-	 @When("^User clicks on the login$")
+	    @When("^User clicks on the login$")
 	    public void user_clicks_on_the_login() throws Throwable {
 		 
 		 driver.findElement(loginButton).click();
 	    
 	    }
+	    
+	    @And("^User logs out$")
+	    public void user_logs_out() throws Throwable {
+	    	
+			Actions actions = new Actions(driver);
+			actions.moveToElement(driver.findElement(logoutButton)).click().build().perform();
+	   
+	    }
 
-	    @Then("^User should see \"([^\"]*)\" message$")
-	    public void user_should_see_something_message(String strArg1) throws Throwable {
+	    @Then("^User should see greeting message$")
+	    public void user_should_see_greeting_message() throws Throwable {
 	        
+	    
+	    	System.out.println(driver.findElement(greetings).getText());
+	    	Base_Page.waitForPresenceOfElement(greetings);
+	    	Base_Page.verify("Hello Luke", greetings);
+	    	
 	    }
 
 	    @And("^User enters following credentials for login$")
@@ -88,7 +104,9 @@ public class WebScenarios extends Page_Objects{
 	    		driver.findElement(passWord).sendKeys(list.get(i).get("password"));	
 	    	
 	    	}
-			
+	    	
+	    	
+
 	    
 	    	
 }
@@ -99,7 +117,7 @@ public class WebScenarios extends Page_Objects{
 				if(driver != null && scenario.isFailed()) {
 					
 					Base_Page base = new Base_Page();
-					base.captureScreenshot();
+					Base_Page.captureScreenshot();
 					driver.manage().deleteAllCookies();
 					driver.quit();
 					driver = null;

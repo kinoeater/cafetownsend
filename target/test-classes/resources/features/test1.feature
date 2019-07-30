@@ -9,5 +9,6 @@ Feature: Login functionality tests
       | username | password  | 
       | Luke     | Skywalker | 
      When User clicks on the login
-   #  Then User should see "Hello Luke" message
+      Then User should see greeting message
+     And User logs out
   

@@ -9,6 +9,7 @@ import java.io.OutputStream;
 import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TakesScreenshot;
@@ -21,7 +22,7 @@ import utils.DriverFactory;
 
 public class Base_Page extends DriverFactory{
 	
-	 protected WebDriverWait wait;
+	 protected static WebDriverWait wait;
 
 	 private static String screenshotName;
 	
@@ -178,18 +179,76 @@ public class Base_Page extends DriverFactory{
 	     return false;
 	    }
 	   }
+	   
+	   public static boolean isElementClickable(WebElement element) {
+		   try {
+		    wait.until(ExpectedConditions.elementToBeClickable(element));
+		    System.out.println("WebElement is clickable using locator: " + "<" + element.toString() + ">");
+		    return true;
+		   } catch (Exception e) {
+		    System.out.println("WebElement is NOT clickable using locator: " + "<" + element.toString() + ">");
+		    return false;
+		   }
+		  }
+	   
+	   public static boolean waitForPresenceOfElement(By locator) {	        
 
+	        
+	        try {
+		        WebDriverWait wait = new WebDriverWait(driver, 30);
+		        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+	   	     System.out.println("WebElement is present using locator: " + "<" + locator.toString() + ">");
+	   	     return true;
+	   	    } catch (Exception e) {
+	   	     System.out.println("WebElement is NOT visible, using locator: " + "<" + locator.toString() + ">");
+	   	     Assert.fail("WebElement is NOT visible, Exception: " + e.getMessage());
+	   	     return false;
+	   	    }
 
-	   public boolean isElementClickable(WebElement element) {
-	    try {
-	     this.wait.until(ExpectedConditions.elementToBeClickable(element));
-	     System.out.println("WebElement is clickable using locator: " + "<" + element.toString() + ">");
-	     return true;
-	    } catch (Exception e) {
-	     System.out.println("WebElement is NOT clickable using locator: " + "<" + element.toString() + ">");
-	     return false;
 	    }
-	   }
+	   /*For verification */
+	   
+	// method that helps to verify the text of a certain locator, if it is wrong, takes a screenshot
+
+	    public static void verify(String verificaiton_text, By locator) throws Exception {
+
+
+	        try {
+
+	          
+	            WebElement myDynamicElement = (new WebDriverWait(driver, 30))
+	                .until(ExpectedConditions.presenceOfElementLocated(locator));
+
+	            String text = myDynamicElement.getText();
+	            System.out.println(text);
+
+	            Assert.assertTrue(verificaiton_text.equalsIgnoreCase(text));
+	            System.out.println("UserA can see " + "< " + text + " >" );
+
+
+	        } catch (AssertionError error) {
+
+	            
+	            WebElement myDynamicElement = (new WebDriverWait(driver, 30))
+	                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+	            String text = myDynamicElement.getText();
+	            System.out.println(text);
+
+	            Assert.assertTrue(verificaiton_text.equalsIgnoreCase(text));
+	            System.out.println("Second try with catch! UserA can see " + "< " + text + " >" );
+
+	        } catch (Exception e) {
+
+	            Assert.fail("Could not find the " + verificaiton_text);
+	        }
+
+	    }
+
+	  
+
+
+
 
 	  
 	  

@@ -55,6 +55,16 @@ formatter.step({
   "name": "User clicks on the login",
   "keyword": "When "
 });
+formatter.step({
+  "line": 12,
+  "name": "User should see greeting message",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "User logs out",
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -65,25 +75,39 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 7589822300,
+  "duration": 6668326100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 184255100,
+  "duration": 180835600,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 57965000,
+  "duration": 65057500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WebScenarios.user_should_see_greeting_message()"
+});
+formatter.result({
+  "duration": 53595300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "WebScenarios.user_logs_out()"
+});
+formatter.result({
+  "duration": 143266300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 648938300,
+  "duration": 653093900,
   "status": "passed"
 });
 });

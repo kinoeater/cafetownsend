@@ -20,7 +20,7 @@
         "after": [
           {
             "result": {
-              "duration": 648938300,
+              "duration": 653093900,
               "status": "passed"
             },
             "match": {
@@ -33,7 +33,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7589822300,
+              "duration": 6668326100,
               "status": "passed"
             },
             "line": 7,
@@ -51,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 184255100,
+              "duration": 180835600,
               "status": "passed"
             },
             "line": 8,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 57965000,
+              "duration": 65057500,
               "status": "passed"
             },
             "line": 11,
@@ -88,6 +88,30 @@
               "location": "WebScenarios.user_clicks_on_the_login()"
             },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53595300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should see greeting message",
+            "match": {
+              "location": "WebScenarios.user_should_see_greeting_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 143266300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User logs out",
+            "match": {
+              "location": "WebScenarios.user_logs_out()"
+            },
+            "keyword": "And "
           }
         ]
       }

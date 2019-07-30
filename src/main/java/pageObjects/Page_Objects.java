@@ -15,15 +15,26 @@ import utils.DriverFactory;
 
 public class Page_Objects extends DriverFactory{
 	
+	
+	/* LOGIN PAGE LOCATORS WITH By */
 	protected By userName = ByAngular.model("user.name");
 	protected By passWord = ByAngular.model("user.password");
 	protected By loginButton = By.xpath("//button[contains(text(),'Login')]");
+	
+	/* HOME PAGE LOCATORS WITH By */
+	protected By logoutButton = ByAngular.cssContainingText("p.main-button", "Logout");
+	
+	protected By createButton = ByAngular.cssContainingText("a#bAdd.subButton", "Create");	
+	protected By editButton = ByAngular.cssContainingText("#bEdit.subButton", "Edit");	
+	protected By deleteButton = ByAngular.cssContainingText("#bDelete.subButton", "Edit");
+	protected By greetings = ByAngular.cssContainingText("p#greetings.ng-binding", "Hello Luke");
+	
 	
 	public Page_Objects() throws IOException {
 		super();
 	}
 	
-	public static Page_Objects setup (String brws) throws Exception {
+	public static Page_Objects goToLoginPage (String brws) throws Exception {
 		
 		driver = getDriver(brws);
 		ngWebdriver = new NgWebDriver((JavascriptExecutor) driver);
