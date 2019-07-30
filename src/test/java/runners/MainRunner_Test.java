@@ -19,8 +19,7 @@ public class MainRunner_Test extends AbstractTestNGCucumberTests {
 	
 	@AfterClass
 	public static void writeExtentReport() throws IOException, InterruptedException {
-		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + File.separator +"src"+ File.separator +"main"+ File.separator +"java"+ File.separator +"utils"+ File.separator +"ReportsConfig.xml"));
-		Base_Page base = new Base_Page();
-		base.copyLatestExtentReport();
+		Reporter.loadXMLConfig(new File(System.getProperty("user.dir") + File.separator +"src"+ File.separator +"main"+ File.separator +"java"+ File.separator +"utils"+ File.separator +"ReportsConfig.xml"));	
+		Base_Page.copyLatestExtentReport();
 	}
 }

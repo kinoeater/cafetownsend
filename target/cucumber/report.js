@@ -75,39 +75,39 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 6668326100,
+  "duration": 6536785600,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 180835600,
+  "duration": 220698700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 65057500,
+  "duration": 79845400,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_see_greeting_message()"
 });
 formatter.result({
-  "duration": 53595300,
+  "duration": 62383800,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
 });
 formatter.result({
-  "duration": 143266300,
+  "duration": 148079900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 653093900,
+  "duration": 665786300,
   "status": "passed"
 });
 });
