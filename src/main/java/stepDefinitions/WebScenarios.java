@@ -12,11 +12,15 @@ import com.paulhammant.ngwebdriver.ByAngular;
 import com.paulhammant.ngwebdriver.NgWebDriver;
 
 import cucumber.api.DataTable;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageObjects.Base_Page;
 import pageObjects.Page_Objects;
 import utils.DriverFactory;
 
@@ -29,6 +33,8 @@ public class WebScenarios extends Page_Objects{
 
 //	static WebDriver driver;
 //	static NgWebDriver ngWebdriver;
+	
+
 
 	@Given("^User navigates to login page with \"([^\"]*)\" browser$")
 	public static void user_navigates_to_login_page_with_browser(String browser) throws Throwable {
@@ -86,5 +92,27 @@ public class WebScenarios extends Page_Objects{
 	    
 	    	
 }
+	    
+	    @After
+		public void tearDownAndScreenshotOnFailure(Scenario scenario) {
+			try {
+				if(driver != null && scenario.isFailed()) {
+					
+					Base_Page base = new Base_Page();
+					base.captureScreenshot();
+					driver.manage().deleteAllCookies();
+					driver.quit();
+					driver = null;
+				}
+				if(driver != null) {
+					
+					driver.manage().deleteAllCookies();
+					driver.quit();
+					driver = null;
+				}
+			} catch (Exception e) {
+				System.out.println("Methods failed, Exception: " + e.getMessage());
+			}
+	}
 	    
 }

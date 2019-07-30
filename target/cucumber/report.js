@@ -65,21 +65,25 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 12733210100,
+  "duration": 7589822300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 168357400,
+  "duration": 184255100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 60344000,
+  "duration": 57965000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 648938300,
   "status": "passed"
 });
 });

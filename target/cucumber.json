@@ -17,12 +17,23 @@
         "name": "Successful login with correct credentials",
         "description": "",
         "id": "login-functionality-tests;successful-login-with-correct-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 648938300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WebScenarios.tearDownAndScreenshotOnFailure(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 12733210100,
+              "duration": 7589822300,
               "status": "passed"
             },
             "line": 7,
@@ -40,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 168357400,
+              "duration": 184255100,
               "status": "passed"
             },
             "line": 8,
@@ -68,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 60344000,
+              "duration": 57965000,
               "status": "passed"
             },
             "line": 11,
