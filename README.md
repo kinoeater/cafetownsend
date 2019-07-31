@@ -11,12 +11,12 @@ This document mainly serves as the plan for testing all software artifacts as we
 
 ### Why " NGWebDriver " but not Protractor? 
 
-At first I was thinking to automate the test cases by using protractor. Although I had some experience on that tool (there is a small project on my github) and it is a god fit for angular apps, I also want to benefit from page objects metodology and  Cucumber framework. That was the point I came up to use NGWebDriver. NGWebDriver is a small open source library of WebDriver locators created by " Paul Hammant "  and more for AngularJS (v1.x) and Angular (v2.x +), for Java.  It works with Firefox, Chrome and all the other Selenium-WebDriver browsers.
+At first I was thinking to automate the test cases by using protractor. Although I had some experience on that tool (there is a small project on my github) and it is a good fit for angular apps, I also want to benefit from page objects metodology and  Cucumber framework. That was the point I came up to use NGWebDriver. NGWebDriver is a small open source library of WebDriver locators created by " Paul Hammant "  and more for AngularJS (v1.x) and Angular (v2.x +), for Java.  It works with Firefox, Chrome and all the other Selenium-WebDriver browsers.
 
 https://github.com/paul-hammant/ngWebDriver
 
 #### Dowside of using NGWebDriver:
-Unfortunately it is not a magic tool make QA people happy with angular app testing. Sometime it has causing syncronisation issues. 
+Unfortunately it is not a magic tool that make QA people happy with angular app testing. Sometime it has causing syncronisation issues. 
 
 ### Why " Cucumber" and "Page Objects"? 
 By using NGWebDriver library we can handle angular application easily and create page objects with ByAngular locator helper. Another thing  page objects design pattern helps us to enhance test maintenance and reduces code duplication. Maybe the best part of this framework is using gherkin language to create easily readible test cases within the automation. They are are also reusable and easy to edit. Moreover tomorrow if we want to add more tests it very easy, we can pick proper methods  from the base page then stick with the step definitions of the gherkin files.
