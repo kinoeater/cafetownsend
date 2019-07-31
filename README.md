@@ -21,12 +21,30 @@ Unfortunately it is not a magic tool make QA people happy with angular app testi
 ### Why " Cucumber" and "Page Objects"? 
 By using NGWebDriver library we can handle angular application easily and create page objects with ByAngular locator helper. Another thing  page objects design pattern helps us to enhance test maintenance and reduces code duplication. Maybe the best part of this framework is using gherkin language to create easily readible test cases within the automation. They are are also reusable and easy to edit. Moreover tomorrow if we want to add more tests it very easy, we can pick proper methods  from the base page then stick with the step definitions of the gherkin files.
 
-#### CUCUMBER FRAMEWORK DESIGN
+#### Cucumber Framework
 You can choose firefox or chrome at the gherkin level. You do not need to bother with updating the browser drivers, because Bonigarcia’s webdriver manager will easily handle it.  If you want to use different browsers like IE, code can also be modified.
 Page Object page has its specific web elements in it and Base Page has some specific easy to use methods. More methods can be added if required. It is like a toolbox of the framework, use the gadgets, add new gadgets when you want.
 
-#### RUNNING THE TESTS
-1. By directly using runner class
+ ### Scenario: Successfully creates a new user then deletes it  
+    Given User should be at home page
+      And User clicks on the Create button
+      And User should be in new user page
+      And User enters following details for new user
+      
+      | First_name | Last_name  | Start_date | Email               | 
+      | Alfred     | Pennyworth | 1933-03-14 | Pennyworth@dark.com | 
+      
+     When User clicks on the Add button
+     Then User should see "Alfred Pennyworth" in the employees list
+      And User deletes "Alfred Pennyworth"   
+     
+     # This one deletes newly added employee, so same credentials can be used next time 
+     
+     And User logs out
+     
+
+#### Running the Tests
+##### 1. By directly using runner class
 
 a) You should open / choose one of the runner classes under /check_24_Framework/src/test/java/runners
 
@@ -34,8 +52,10 @@ b) Then you should right click on the page or on the class,
 
 c) Then you should click on TestNG option.
 
-2. By using "mvn test" command on CLI
-a) You go to root directory of the maven project from command line (CMD / terminal) b) Then type followings
+##### 2. By using "mvn test" command on CLI
+a) You go to root directory of the maven project from command line (CMD / terminal) 
+
+b) Then type followings
 
 mvn test
 
