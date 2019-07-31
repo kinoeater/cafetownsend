@@ -42,6 +42,12 @@ Page Object page has its specific web elements in it and Base Page has some spec
      
      And User logs out
      
+### What about reporting?
+
+I used Cucumber Extent Report as reporting tool.
+After each test run latest test report can be seen with "report.html" name under /output directory.
+Report can be opened simply double clicking on the item.
+
 
 #### Running the Tests
 ##### 1. By directly using runner class on IDE
@@ -71,12 +77,6 @@ mvn test
 c) Then hit enter
 
 ###### Surefire plugin is added to the POM, so you can also put the Jenkins in work
-
-### What about reporting?
-
-I used Cucumber Extent Report as reporting tool.
-After each test run latest test report can be seen with "report.html" name under /output directory.
-Report can be opened simply double clicking on the item.
 
 
 ## III. Manual Test Cases 
