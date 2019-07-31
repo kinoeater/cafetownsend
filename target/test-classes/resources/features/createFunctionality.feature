@@ -1,6 +1,8 @@
 Feature: Create New Employee functionality tests
-#You can select a browser as "Chrome" or "Firefox" by simply entering your choice to properties/config.properties file
-#By the help of the Bonigarcia’s webdriver manager, tests will run with the selected browser
+#You can select a browser as "Chrome" or "Firefox" by simply
+# entering your choice to properties/config.properties file
+#By the help of the Bonigarcia’s webdriver manager, tests will 
+#run with the selected browser
 
   Background: Successful login with correct credentials
   

@@ -1,19 +1,12 @@
 package utils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import com.paulhammant.ngwebdriver.NgWebDriver;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class DriverFactory {
 	
 	protected static WebDriver driver;

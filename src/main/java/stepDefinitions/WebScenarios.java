@@ -27,12 +27,10 @@ public class WebScenarios extends Page_Objects {
 
     }
 
-
-    /*
-     ********************* LOGIN FUNCTION TEST SCENARIOS*******************
-     * 
-     * 
-     */
+    /**********************************************************************************
+     **LOGIN FUNCTION STEP DEFINITIONS
+     **********************************************************************************/
+    
     @Given("^User navigates to login page with \"([^\"]*)\" browser$")
     public static void user_navigates_to_login_page_with_browser(String browser) throws Throwable {
 
@@ -89,11 +87,10 @@ public class WebScenarios extends Page_Objects {
         }
 
     }
-    /*
-     * 
-     * ***************************CREATE FUNCTION SCENARIOS ******************
-     * 
-     */
+
+    /**********************************************************************************
+     **CREATE FUNCTION STEP DEFINITIONS
+     **********************************************************************************/
 
     @When("^User clicks on the Add button$")
     public void user_clicks_on_the_add_button() throws Exception {
@@ -211,19 +208,14 @@ public class WebScenarios extends Page_Objects {
 
                 e.printStackTrace();
 
-
-
             }
-
         }
-
     }
 
-    /*
-     * 
-     * ***************************AFTER SCENARIO ******************
-     * 
-     */
+    /**********************************************************************************
+     **AFTER SCENARIO
+     **********************************************************************************/
+
 
     @After
     public void tearDownAndScreenshotOnFailure(Scenario scenario) {

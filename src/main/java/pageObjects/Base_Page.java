@@ -200,14 +200,13 @@ public class Base_Page extends DriverFactory {
 		}
 
 	}
-	/*
-	    * 
-	    * METHODS FOR VERIFICATION 
-	    * 
-	    * 
-	    * */
+	
+	
+	/**********************************************************************************
+	    **METHODS FOR VERIFICATION
+	    *that helps to verify the text of a certain locator, if it is wrong, takes a screenshot
+	    **********************************************************************************/
 
-	// method that helps to verify the text of a certain locator, if it is wrong, takes a screenshot
 
 	public static void verify(String verificaiton_text, By locator) throws Exception {
 

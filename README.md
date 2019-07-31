@@ -11,18 +11,18 @@ This document mainly serves as the plan for testing all software artifacts as we
 
 ### Why " NGWebDriver " but not Protractor? 
 
-At first I was thinking to automate the test cases by using protractor. Although I had some experience on that tool (there is a small project on my github) and it is a good fit for angular apps, I also want to benefit from page objects metodology and  Cucumber framework. That was the point I came up to use NGWebDriver. NGWebDriver is a small open source library of WebDriver locators created by " Paul Hammant "  and more for AngularJS (v1.x) and Angular (v2.x +), for Java.  It works with Firefox, Chrome and all the other Selenium-WebDriver browsers.
+At first, I was thinking to automate the test cases by using protractor. Although I had some experience on that tool (there is a small project on my github) and it is a good fit for angular apps, I also want to benefit from page objects metodology and  Cucumber framework. That was the point I came up to use NGWebDriver. NGWebDriver is a small open source library of WebDriver locators created by " Paul Hammant "  and more for AngularJS (v1.x) and Angular (v2.x +), for Java.  It works with Firefox, Chrome and all the other Selenium-WebDriver browsers.
 
 https://github.com/paul-hammant/ngWebDriver
 
-#### Dowside of using NGWebDriver:
-Unfortunately it is not a magic tool that make QA people happy with angular app testing. Sometime it has causing syncronisation issues. 
+#### Downside of using NGWebDriver:
+Unfortunately, it is not a magic tool that makes QA people happy with angular app testing. Sometimes it is causing synchronization issues. 
 
 ### Why " Cucumber" and "Page Objects"? 
-By using NGWebDriver library we can handle angular application easily and create page objects with ByAngular locator helper. Another thing  page objects design pattern helps us to enhance test maintenance and reduces code duplication. Maybe the best part of this framework is using gherkin language to create easily readible test cases within the automation. They are are also reusable and easy to edit. Moreover tomorrow if we want to add more tests it very easy, we can pick proper methods  from the base page then stick with the step definitions of the gherkin files.
+By using NGWebDriver library we can handle angular application easily and create page objects with ByAngular locator helper. Another thing page objects design pattern helps us to enhance test maintenance and reduces code duplication. Maybe the best part of this framework is using Gherkin language to create easily readable test cases within the automation. They are are also reusable and easy to edit. Moreover, tomorrow if we want to add more tests, it is very easy, we can pick proper methods from the base page then stick with the step definitions of the gherkin files.
 
 #### Cucumber Framework
-You can choose firefox or chrome at the gherkin level. You do not need to bother with updating the browser drivers, because Bonigarcia’s webdriver manager will easily handle it.  If you want to use different browsers like IE, code can also be modified.
+You can choose firefox or chrome at the Gherkin level. You do not need to bother with updating the browser drivers, because Bonigarcia’s webdriver manager will easily handle it.  If you want to use different browsers like IE, code can also be modified.
 Page Object page has its specific web elements in it and Base Page has some specific easy to use methods. More methods can be added if required. It is like a toolbox of the framework, use the gadgets, add new gadgets when you want.
 
  ### Scenario: Successfully creates a new user then deletes it  
@@ -80,7 +80,7 @@ c) Then hit enter
 
 
 ## III. Manual Test Cases 
-Black box manual test cases that will run on the code. Rather creating all of the test cases I wrote down the the test cases for login and create new user functionalities.
+Black box manual test cases that will run on the code. Rather creating all of the test cases I wrote down the test cases for login and create new user functionalities.
 
 The URL: http://cafetownsend-angular-rails.herokuapp.com
 
@@ -99,7 +99,7 @@ e) Verify that user cannot login with empty password
 f) Verify that user cannot login with empty email and empty password
 
 ### Create new employee functionality tests:
-a)	Verify that user can successfully creates a new user by entering whole credentials correctly, then deletes newly created user entry.
+a)	Verify that user can successfully create a new user by entering whole credentials correctly, then deletes newly created user entry.
 
 ## Gherkin format:
 
