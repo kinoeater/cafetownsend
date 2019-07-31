@@ -1,7 +1,7 @@
 ### Automating an Angular Web Page by in Page Object and Cucumber hybrid Framework by the help of ngWebDriver
 
 
-## CAFETOWNSEND WEB APPLICATION QA TEST PLAN:
+## CAFETOWNSEND WEB APPLICATION TESTS:
 
 ## I. Introduction
 
