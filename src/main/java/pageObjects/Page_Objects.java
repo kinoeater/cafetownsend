@@ -4,10 +4,6 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-
 import com.paulhammant.ngwebdriver.ByAngular;
 import com.paulhammant.ngwebdriver.NgWebDriver;
 
@@ -55,35 +51,7 @@ public class Page_Objects extends DriverFactory{
 		
 	}
 	
-	public Page_Objects entersEmail (String email) throws Exception {
-		
 
-		
-		return new Page_Objects();
-		
-	}
 
-	
-	  public Page_Objects entersPassword (String password) throws Exception {
-			
-	  
-	   return new Page_Objects();
-	   
-	}
-	  
-	   public Page_Objects clicks_Login () throws Exception {
-			   
-	  
-	   return new Page_Objects();
-	   
-	}
-	   
-	   public Page_Objects check_visibility_of_email_area () throws Exception {
-			
-	
-	   return new Page_Objects();
-		
-	}
-	  
 	  
 }

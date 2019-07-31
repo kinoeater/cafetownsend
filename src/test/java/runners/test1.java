@@ -81,9 +81,9 @@ public class test1 {
 		Thread.sleep(5000);
 		driver.findElement(deleteButton).click();
 		Thread.sleep(3000);
-		
+		System.out.println(driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept();
-		driver.switchTo().alert().getText();
+		
 		Thread.sleep(3000);
 		/*if (employeeName.contentEquals(input)) {
 			

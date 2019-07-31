@@ -9,17 +9,19 @@ Feature: creates a new user
       | username | password  | 
       | Luke     | Skywalker | 
      When User clicks on the login
- 
-  
-  Scenario: Using incorrect date format
+
+      
+  Scenario: Successfully creates a new user
   
     Given User should be at home page
       And User clicks on the Create button
       And User should be in new user page
       And User enters following details for new user
-      | First_name | Last_name | Start_date | Email						 | 
-      | Andy       | Dufresne      | 94-19-21 |  pulpfiction@gmail.com     | 
+      | First_name | Last_name  | Start_date | Email               | 
+      | Alfred     | Pennyworth | 1933-03-14 | Pennyworth@dark.com | 
      When User clicks on the Add button
-     Then User should see the alert message
+     Then User should see "Alfred Pennyworth" in the employees list
+      And User deletes "Alfred Pennyworth"    
+     # This one deletes newly added employee, so same credentials can be used next time 
       And User logs out
   
