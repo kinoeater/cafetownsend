@@ -29,4 +29,33 @@ Feature: Login functionality tests
       | username | password | 
       | Luke     | Connor   | 
      When User clicks on the login
-     Then User should see login error message
+     Then User should still be in login page 
+     
+  Scenario: Unsuccessful login with empty username
+  
+    Given User navigates to login page with "Chrome" browser
+      And User enters following credentials for login
+      | username | password | 
+      |          | Connor   | 
+     When User clicks on the login
+     Then User should still be in login page     
+     
+
+  Scenario: Unsuccessful login with empty password
+  
+    Given User navigates to login page with "Chrome" browser
+      And User enters following credentials for login
+      | username | password | 
+      | Luke     |          | 
+     When User clicks on the login
+     Then User should still be in login page     
+     
+  Scenario: Unsuccessful login with empty user name and  password
+  
+    Given User navigates to login page with "Chrome" browser
+      And User enters following credentials for login
+      | username | password | 
+      | Luke     |          | 
+     When User clicks on the login
+     Then User should still be in login page     
+     

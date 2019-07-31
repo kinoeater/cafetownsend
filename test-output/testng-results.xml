@@ -1,42 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="169011" started-at="2019-07-31T11:01:33Z" finished-at="2019-07-31T11:04:22Z">
+  <suite name="Default suite" duration-ms="2614" started-at="2019-07-31T13:46:05Z" finished-at="2019-07-31T13:46:08Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.MainRunner_Test@4cf777e8]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="169011" started-at="2019-07-31T11:01:33Z" finished-at="2019-07-31T11:04:22Z">
-      <class name="runners.MainRunner_Test">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.MainRunner_Test@4cf777e8]" name="setUpClass" is-config="true" duration-ms="195" started-at="2019-07-31T14:01:33Z" finished-at="2019-07-31T14:01:33Z">
+    <test name="Default test" duration-ms="2614" started-at="2019-07-31T13:46:05Z" finished-at="2019-07-31T13:46:08Z">
+      <class name="runners.TestRunner_Test">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="setUpClass" is-config="true" duration-ms="202" started-at="2019-07-31T16:46:05Z" finished-at="2019-07-31T16:46:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.MainRunner_Test@4cf777e8]" name="feature" duration-ms="115152" started-at="2019-07-31T14:01:34Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-31T14:03:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Create New Employee functionality tests]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.MainRunner_Test@4cf777e8]" name="feature" duration-ms="23850" started-at="2019-07-31T14:03:29Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-31T14:03:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Login functionality tests]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.MainRunner_Test@4cf777e8]" name="feature" duration-ms="20313" started-at="2019-07-31T14:03:53Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-31T14:04:13Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="feature" duration-ms="1967" started-at="2019-07-31T16:46:06Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-31T16:46:08Z">
           <params>
             <param index="0">
               <value>
@@ -46,24 +24,10 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=75.0.3770.142)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64889}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 269cc715236e504729d7b947184bcc36]]>
+              <![CDATA[java.lang.NullPointerException]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=75.0.3770.142)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64889}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 269cc715236e504729d7b947184bcc36
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -90,54 +54,26 @@ Session ID: 269cc715236e504729d7b947184bcc36
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=75.0.3770.142)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\musta\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64889}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 269cc715236e504729d7b947184bcc36
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-	at stepDefinitions.WebScenarios.user_deletes_something(WebScenarios.java:191)
-	at ✽.And User deletes "Alfred Pennyworth"(test.feature:24)
+Caused by: java.lang.NullPointerException
+	at utils.DriverFactory.getDriver(DriverFactory.java:51)
+	at pageObjects.Page_Objects.goToLoginPage(Page_Objects.java:45)
+	at stepDefinitions.WebScenarios.user_navigates_to_login_page_with_browser(WebScenarios.java:39)
+	at ✽.Given User navigates to login page with "Firefox" browser(src/test/java/resources/features/test.feature:7)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.MainRunner_Test@4cf777e8]" name="feature" duration-ms="8879" started-at="2019-07-31T14:04:13Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-31T14:04:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Login functionality tests]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runners.MainRunner_Test@4cf777e8]" name="writeExtentReport" is-config="true" duration-ms="47" started-at="2019-07-31T14:04:22Z" finished-at="2019-07-31T14:04:22Z">
+        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="writeExtentReport" is-config="true" duration-ms="27" started-at="2019-07-31T16:46:08Z" finished-at="2019-07-31T16:46:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeExtentReport -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.MainRunner_Test@4cf777e8]" name="tearDownClass" is-config="true" duration-ms="485" started-at="2019-07-31T14:04:22Z" finished-at="2019-07-31T14:04:22Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="tearDownClass" is-config="true" duration-ms="345" started-at="2019-07-31T16:46:08Z" finished-at="2019-07-31T16:46:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.MainRunner_Test -->
+      </class> <!-- runners.TestRunner_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

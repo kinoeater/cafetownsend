@@ -1,10 +1,10 @@
 Feature: creates a new user
-#You can select a browser as chrome" or "firefox" by simply entering your choice to properties/config.properties file
+#You can select a browser as chrome" or "Firefox" by simply entering your choice to properties/config.properties file
 #By the help of the Bonigarcia’s webdriver manager, tests will run with the selected browser
 
   Background:  Successful login with correct credentials
 
-    Given User navigates to login page with "Chrome" browser
+    Given User navigates to login page with "Firefox" browser
      And User enters following credentials for login
       | username | password  | 
       | Luke     | Skywalker | 

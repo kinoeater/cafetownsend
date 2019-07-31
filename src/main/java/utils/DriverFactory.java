@@ -26,8 +26,7 @@ public class DriverFactory {
 		try {
 			// Read Configuration
 			if ("Chrome".equals(browser)) {
-		        
-				
+	
 			 	WebDriverManager.chromedriver().setup();
 		    	driver = new ChromeDriver();
 				driver.manage().window().maximize();
@@ -35,6 +34,13 @@ public class DriverFactory {
 
 	        } else if ("Firefox".equals(browser)) {
 	           
+	        	System.out.println(browser.toString());
+	        	WebDriverManager.firefoxdriver().setup();
+				DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+				capabilities.setCapability("marionette", true);
+				driver = new FirefoxDriver();
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	        }
 	    
 

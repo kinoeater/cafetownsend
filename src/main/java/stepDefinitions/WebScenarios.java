@@ -39,6 +39,13 @@ public class WebScenarios extends Page_Objects {
         goToLoginPage(browser);
 
     }
+    
+    @Then("^User should still be in login page$")
+    public void user_should_still_be_in_login_page() throws Throwable {
+      
+        Thread.sleep(2000);
+        Base_Page.verify("Login", loginButton);
+    }    
 
     @When("^User clicks on the login$")
     public void user_clicks_on_the_login() throws Throwable {
