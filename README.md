@@ -44,7 +44,12 @@ Page Object page has its specific web elements in it and Base Page has some spec
      
 
 #### Running the Tests
-##### 1. By directly using runner class
+##### 1. By directly using runner class on IDE
+###### Prerequisites
+*Install Java and Maven to your machine.
+*Install an IDE of your choice, Eclipse or Intellij.
+*Install cucumber, gherkin and Test NG plugins to your IDE.
+
 
 a) You should open / choose one of the runner classes under /check_24_Framework/src/test/java/runners
 
@@ -53,6 +58,10 @@ b) Then you should right click on the page or on the class,
 c) Then you should click on TestNG option.
 
 ##### 2. By using "mvn test" command on CLI
+
+###### Prerequisites
+*Install Java and Maven to your machine.
+
 a) You go to root directory of the maven project from command line (CMD / terminal) 
 
 b) Then type followings
