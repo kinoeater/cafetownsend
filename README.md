@@ -1,12 +1,24 @@
-# Page Object and Cucumber hybrid Framework 
+# Automating an Angular Web Page by in Page Object and Cucumber hybrid Framework by the help of ngWebDriver
 
 
-# CAFETOWNSEND WEB APPLICATION QA TEST PLAN:
+## CAFETOWNSEND WEB APPLICATION QA TEST PLAN:
 
 ## I. Introduction
-This serves as the plan for testing all software artifacts as well as the reporting of test results.
-## II. Test Plan
-Black box test cases you will run on your code.
+
+This document mainly serves as the plan for testing all software artifacts as well as the reporting of test results. 
+
+## II. Automation Framework 
+
+At first I was thinking to automate the test cases by using protractor. Although I had some experience on that tool which is a god fit for angular apps, I aşso want to benefit from page objects metodology and  Cucumber framework. That was the point I came up to use NGWebDriver. It is a small open source library of WebDriver locators and more for AngularJS (v1.x) and Angular (v2.x +), for Java. 
+It works with Firefox, Chrome and all the other Selenium-WebDriver browsers.
+
+https://github.com/paul-hammant/ngWebDriver
+
+
+## III. Manual Test Cases 
+Black box manual test cases that will run on the code. Rather creating all of the test cases I wrote down the the test cases for login and create new user functionalities.
+
+The URL: http://cafetownsend-angular-rails.herokuapp.com
 
 ### Login functionality tests:
 
@@ -27,8 +39,7 @@ a)	Verify that user can successfully creates a new user by entering whole creden
 
 ## Gherkin format:
 
-  ### Scenario: Successfully creates a new user then deletes it
-  
+  ### Scenario: Successfully creates a new user then deletes it  
     Given User should be at home page
       And User clicks on the Create button
       And User should be in new user page
