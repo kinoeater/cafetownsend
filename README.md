@@ -1,4 +1,6 @@
 #### Automating an Angular Web Page with Page Objects and Cucumber Framework by the help of ngWebDriver
+#### You can also read the same information with PDF format by clicking following link.
+https://github.com/kinoeater/cafetownsend/blob/master/MOBIQUITY_QA%20TASK.pdf
 
 
 ## CAFETOWNSEND WEB APPLICATION TESTS:
