@@ -64,21 +64,21 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 6728599900,
+  "duration": 7006188200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 180585200,
+  "duration": 205455200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 112633300,
+  "duration": 117356900,
   "status": "passed"
 });
 formatter.scenario({
@@ -159,35 +159,35 @@ formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "duration": 35569600,
+  "duration": 47424900,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_create_button()"
 });
 formatter.result({
-  "duration": 2726561500,
+  "duration": 2824686600,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_in_new_user_page()"
 });
 formatter.result({
-  "duration": 291591200,
+  "duration": 309555500,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_details_for_new_user(DataTable)"
 });
 formatter.result({
-  "duration": 395813600,
+  "duration": 484035900,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_add_button()"
 });
 formatter.result({
-  "duration": 2168058400,
+  "duration": 2172881100,
   "status": "passed"
 });
 formatter.match({
@@ -200,7 +200,7 @@ formatter.match({
   "location": "WebScenarios.user_should_see_something_in_the_employees_list(String)"
 });
 formatter.result({
-  "duration": 1315279300,
+  "duration": 608299600,
   "status": "passed"
 });
 formatter.match({
@@ -213,18 +213,18 @@ formatter.match({
   "location": "WebScenarios.user_deletes_something(String)"
 });
 formatter.result({
-  "duration": 4569117500,
+  "duration": 4710692000,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
 });
 formatter.result({
-  "duration": 2197416900,
+  "duration": 2166720700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 639023000,
+  "duration": 638392100,
   "status": "passed"
 });
 formatter.background({
@@ -285,21 +285,21 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 5746357500,
+  "duration": 5680310000,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 222414000,
+  "duration": 228791400,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 122854900,
+  "duration": 115816400,
   "status": "passed"
 });
 formatter.scenario({
@@ -369,53 +369,53 @@ formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "duration": 31574100,
+  "duration": 27902700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_create_button()"
 });
 formatter.result({
-  "duration": 2863613800,
+  "duration": 2866955100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_in_new_user_page()"
 });
 formatter.result({
-  "duration": 298475700,
+  "duration": 302555900,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_details_for_new_user(DataTable)"
 });
 formatter.result({
-  "duration": 375775500,
+  "duration": 484252500,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_add_button()"
 });
 formatter.result({
-  "duration": 2183744200,
+  "duration": 2154140700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_still_be_at_new_user_page()"
 });
 formatter.result({
-  "duration": 11431800,
+  "duration": 15336400,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
 });
 formatter.result({
-  "duration": 2187226700,
+  "duration": 2202829000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 671410000,
+  "duration": 667483200,
   "status": "passed"
 });
 formatter.background({
@@ -476,21 +476,21 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 5497436500,
+  "duration": 5751282100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 150939300,
+  "duration": 206151900,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 110837700,
+  "duration": 116224100,
   "status": "passed"
 });
 formatter.scenario({
@@ -560,53 +560,53 @@ formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "duration": 27635100,
+  "duration": 34228600,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_create_button()"
 });
 formatter.result({
-  "duration": 2899524600,
+  "duration": 2986738100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_in_new_user_page()"
 });
 formatter.result({
-  "duration": 310870700,
+  "duration": 339506900,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_details_for_new_user(DataTable)"
 });
 formatter.result({
-  "duration": 394296400,
+  "duration": 454064900,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_add_button()"
 });
 formatter.result({
-  "duration": 2150477500,
+  "duration": 2136566200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_still_be_at_new_user_page()"
 });
 formatter.result({
-  "duration": 10796400,
+  "duration": 11728800,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
 });
 formatter.result({
-  "duration": 2150044600,
+  "duration": 2134508200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 659097900,
+  "duration": 670287500,
   "status": "passed"
 });
 formatter.background({
@@ -667,21 +667,21 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 6678827700,
+  "duration": 5631184400,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 215391900,
+  "duration": 226701700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 109232700,
+  "duration": 127186100,
   "status": "passed"
 });
 formatter.scenario({
@@ -751,53 +751,53 @@ formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "duration": 27340700,
+  "duration": 32226200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_create_button()"
 });
 formatter.result({
-  "duration": 2910984200,
+  "duration": 2867330300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_in_new_user_page()"
 });
 formatter.result({
-  "duration": 305860500,
+  "duration": 302871800,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_details_for_new_user(DataTable)"
 });
 formatter.result({
-  "duration": 360496300,
+  "duration": 442388100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_add_button()"
 });
 formatter.result({
-  "duration": 2154571200,
+  "duration": 2179906800,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_still_be_at_new_user_page()"
 });
 formatter.result({
-  "duration": 11322000,
+  "duration": 24043500,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
 });
 formatter.result({
-  "duration": 2156842600,
+  "duration": 2159276300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 696796800,
+  "duration": 670674300,
   "status": "passed"
 });
 formatter.background({
@@ -858,21 +858,21 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 5634597200,
+  "duration": 5575576600,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 232713200,
+  "duration": 253035000,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 116930700,
+  "duration": 119853800,
   "status": "passed"
 });
 formatter.scenario({
@@ -942,53 +942,53 @@ formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "duration": 32453000,
+  "duration": 33206600,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_create_button()"
 });
 formatter.result({
-  "duration": 2857805400,
+  "duration": 2765067200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_in_new_user_page()"
 });
 formatter.result({
-  "duration": 302879700,
+  "duration": 307513100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_details_for_new_user(DataTable)"
 });
 formatter.result({
-  "duration": 417256000,
+  "duration": 437124200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_add_button()"
 });
 formatter.result({
-  "duration": 2184648600,
+  "duration": 2158422100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_still_be_at_new_user_page()"
 });
 formatter.result({
-  "duration": 12427000,
+  "duration": 13815700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
 });
 formatter.result({
-  "duration": 2201887100,
+  "duration": 2160626700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 693635500,
+  "duration": 674325600,
   "status": "passed"
 });
 formatter.background({
@@ -1049,21 +1049,21 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 5879585900,
+  "duration": 5562153200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 190874200,
+  "duration": 202199000,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 109758200,
+  "duration": 114218400,
   "status": "passed"
 });
 formatter.scenario({
@@ -1144,35 +1144,35 @@ formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "duration": 35583300,
+  "duration": 33269900,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_create_button()"
 });
 formatter.result({
-  "duration": 2859144900,
+  "duration": 2863715300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_in_new_user_page()"
 });
 formatter.result({
-  "duration": 316645800,
+  "duration": 331603900,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_details_for_new_user(DataTable)"
 });
 formatter.result({
-  "duration": 440253200,
+  "duration": 426646200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_hits_enter()"
 });
 formatter.result({
-  "duration": 37085900,
+  "duration": 38732500,
   "status": "passed"
 });
 formatter.match({
@@ -1185,7 +1185,7 @@ formatter.match({
   "location": "WebScenarios.user_should_see_something_in_the_employees_list(String)"
 });
 formatter.result({
-  "duration": 629065600,
+  "duration": 629339300,
   "status": "passed"
 });
 formatter.match({
@@ -1198,18 +1198,18 @@ formatter.match({
   "location": "WebScenarios.user_deletes_something(String)"
 });
 formatter.result({
-  "duration": 2356955000,
+  "duration": 2384209300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
 });
 formatter.result({
-  "duration": 2193436600,
+  "duration": 2188464300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 679567600,
+  "duration": 653074100,
   "status": "passed"
 });
 formatter.background({
@@ -1270,21 +1270,21 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 6157835500,
+  "duration": 5609773300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 254891100,
+  "duration": 189317200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 115727700,
+  "duration": 127311000,
   "status": "passed"
 });
 formatter.scenario({
@@ -1354,53 +1354,53 @@ formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "duration": 31440300,
+  "duration": 34131000,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_create_button()"
 });
 formatter.result({
-  "duration": 2873420000,
+  "duration": 2861410000,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_in_new_user_page()"
 });
 formatter.result({
-  "duration": 303975600,
+  "duration": 316158800,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_details_for_new_user(DataTable)"
 });
 formatter.result({
-  "duration": 502705200,
+  "duration": 501868700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_add_button()"
 });
 formatter.result({
-  "duration": 2136336500,
+  "duration": 2149592500,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_see_the_alert_message()"
 });
 formatter.result({
-  "duration": 3018099600,
+  "duration": 3018366700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
 });
 formatter.result({
-  "duration": 2207754900,
+  "duration": 2166029000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 668901500,
+  "duration": 651894500,
   "status": "passed"
 });
 formatter.uri("loginFunctionality.feature");
@@ -1480,39 +1480,39 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 5636616100,
+  "duration": 9919298800,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 252216000,
+  "duration": 205112700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 123507000,
+  "duration": 128752200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "duration": 31985500,
+  "duration": 33606600,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
 });
 formatter.result({
-  "duration": 2136953600,
+  "duration": 2138035300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 683192400,
+  "duration": 646266800,
   "status": "passed"
 });
 formatter.scenario({
@@ -1569,32 +1569,32 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 6096235600,
+  "duration": 6731661700,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 280787800,
+  "duration": 195666300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 107296500,
+  "duration": 146279000,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_see_login_error_message()"
 });
 formatter.result({
-  "duration": 578887600,
+  "duration": 582701600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 674586200,
+  "duration": 660435400,
   "status": "passed"
 });
 formatter.scenario({
@@ -1651,32 +1651,32 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 5663216100,
+  "duration": 5598313300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 226991600,
+  "duration": 215008300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 113702500,
+  "duration": 130605000,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_see_login_error_message()"
 });
 formatter.result({
-  "duration": 537694200,
+  "duration": 583553500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 672136200,
+  "duration": 647975000,
   "status": "passed"
 });
 formatter.uri("test.feature");
@@ -1745,21 +1745,21 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 5597769300,
+  "duration": 5907620300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 204455600,
+  "duration": 190105400,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 111138500,
+  "duration": 125131900,
   "status": "passed"
 });
 formatter.scenario({
@@ -1840,35 +1840,35 @@ formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "duration": 32187400,
+  "duration": 46815300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_create_button()"
 });
 formatter.result({
-  "duration": 2906443600,
+  "duration": 2775707200,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_in_new_user_page()"
 });
 formatter.result({
-  "duration": 305529700,
+  "duration": 311107900,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_details_for_new_user(DataTable)"
 });
 formatter.result({
-  "duration": 457402600,
+  "duration": 454680300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_add_button()"
 });
 formatter.result({
-  "duration": 2137083700,
+  "duration": 2154071300,
   "status": "passed"
 });
 formatter.match({
@@ -1881,7 +1881,7 @@ formatter.match({
   "location": "WebScenarios.user_should_see_something_in_the_employees_list(String)"
 });
 formatter.result({
-  "duration": 589846600,
+  "duration": 592155400,
   "status": "passed"
 });
 formatter.match({
@@ -1894,8 +1894,8 @@ formatter.match({
   "location": "WebScenarios.user_deletes_something(String)"
 });
 formatter.result({
-  "duration": 6762673500,
-  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d75.0.3770.142)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-U9KGDGS\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\\Users\\musta\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64889}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 269cc715236e504729d7b947184bcc36\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)\r\n\tat stepDefinitions.WebScenarios.user_deletes_something(WebScenarios.java:191)\r\n\tat ✽.And User deletes \"Alfred Pennyworth\"(test.feature:24)\r\n",
+  "duration": 6753095100,
+  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d75.0.3770.142)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-U9KGDGS\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\\Users\\musta\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 8931e90c73872fd413031be274240bb8\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)\r\n\tat stepDefinitions.WebScenarios.user_deletes_something(WebScenarios.java:191)\r\n\tat ✽.And User deletes \"Alfred Pennyworth\"(test.feature:24)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -1905,7 +1905,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 1186059600,
+  "duration": 1279318200,
   "status": "passed"
 });
 formatter.uri("test1.feature");
@@ -1985,39 +1985,39 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 5623799200,
+  "duration": 4749110800,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "duration": 233792800,
+  "duration": 232911100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "duration": 108101600,
+  "duration": 178867100,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "duration": 30791500,
+  "duration": 39668300,
   "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
 });
 formatter.result({
-  "duration": 2180011400,
+  "duration": 2134980300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 685275100,
+  "duration": 654858200,
   "status": "passed"
 });
 });
