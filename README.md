@@ -1,4 +1,4 @@
-### Automating an Angular Web Page by in Page Object and Cucumber hybrid Framework by the help of ngWebDriver
+#### Automating an Angular Web Page with Page Objects and Cucumber Framework by the help of ngWebDriver
 
 
 ## CAFETOWNSEND WEB APPLICATION TESTS:
@@ -69,6 +69,8 @@ b) Then type followings
 mvn test
 
 c) Then hit enter
+
+###### Surefire plugin is added to the POM, so you can also put the Jenkins in work
 
 ### What about reporting?
 
