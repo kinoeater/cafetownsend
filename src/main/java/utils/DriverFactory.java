@@ -33,8 +33,7 @@ public class DriverFactory {
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
 
 	        } else if ("Firefox".equals(browser)) {
-	           
-	        	System.out.println(browser.toString());
+	      
 	        	WebDriverManager.firefoxdriver().setup();
 				DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 				capabilities.setCapability("marionette", true);

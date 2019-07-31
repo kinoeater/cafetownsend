@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\musta\AppData\Local\Temp\testng-eclipse-93297711\testng-customsuite.xml</span>
+                    <span>C:\Users\musta\AppData\Local\Temp\testng-eclipse-786766826\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,7 +129,11 @@
                   </a> <!-- feature(creates a new user) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(creates a new user)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NullPointerException
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: cssContainingText(#bDelete.subButtonDelete) didn&apos;t have any matching elements at this place in the DOM
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-U9KGDGS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: RemoteWebDriver
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -156,11 +160,17 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-	at utils.DriverFactory.getDriver(DriverFactory.java:51)
-	at pageObjects.Page_Objects.goToLoginPage(Page_Objects.java:45)
-	at stepDefinitions.WebScenarios.user_navigates_to_login_page_with_browser(WebScenarios.java:39)
-	at ✽.Given User navigates to login page with &quot;Firefox&quot; browser(src/test/java/resources/features/test.feature:7)
+Caused by: org.openqa.selenium.NoSuchElementException: cssContainingText(#bDelete.subButtonDelete) didn&apos;t have any matching elements at this place in the DOM
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-U9KGDGS&apos;, ip: &apos;10.0.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: RemoteWebDriver
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)
+	at com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at stepDefinitions.WebScenarios.user_deletes_something(WebScenarios.java:204)
+	at ✽.And User deletes &quot;Alfred Pennyworth&quot;(src/test/java/resources/features/test.feature:24)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -172,7 +182,7 @@ Caused by: java.lang.NullPointerException
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\musta\AppData\Local\Temp\testng-eclipse-93297711\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\musta\AppData\Local\Temp\testng-eclipse-786766826\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -248,12 +258,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'runners.TestRunner_Test')
-data.setCell(0, 3, 1967);
+data.setCell(0, 3, 20295);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -288,15 +298,15 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(creates a new user)</span>
-                <span class="method-start">266 ms</span>
+                <span class="method-start">302 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">writeExtentReport</span>
-                <span class="method-start">2235 ms</span>
+                <span class="method-start">20603 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">2262 ms</span>
+                <span class="method-start">20653 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

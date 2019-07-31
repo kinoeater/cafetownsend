@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 31, 2019 04:48:04 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 31, 2019 04:46:06 PM</span>
 				</a>
 			</li>
 			<li>
@@ -160,10 +160,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='81.818%'><span class='strong'>9</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='90.909%'>10</span> others
 				</div>
 			</div>
 		</div>
@@ -180,108 +180,102 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>creates a new user</span>
-						<span class='test-time'>Jul 31, 2019 04:48:04 PM</span>
+						<span class='test-time'>Jul 31, 2019 04:46:06 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 19s+217ms</span>
+	<span class='duration right label'>0h 0m 1s+772ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Successfully creates a new user</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node given pass' status='pass'>
+		<li test-id='3' class='node given fail' status='fail'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given User navigates to login page with "Firefox" browser</span>
-				<div class='pre'>passed</div>
+				<div class='pre'><pre>java.lang.NullPointerException
+	at utils.DriverFactory.getDriver(DriverFactory.java:51)
+	at pageObjects.Page_Objects.goToLoginPage(Page_Objects.java:45)
+	at stepDefinitions.WebScenarios.user_navigates_to_login_page_with_browser(WebScenarios.java:39)
+	at ?.Given User navigates to login page with "Firefox" browser(src/test/java/resources/features/test.feature:7)
+</pre></div>
 			
 		</li>
-		<li test-id='4' class='node and pass' status='pass'>
+		<li test-id='4' class='node and skip' status='skip'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And User enters following credentials for login</span>
 				<div class='pre'><table><tr><td>username</td><td>password</td></tr><tr><td>Luke</td><td>Skywalker</td></tr></table></div>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
-		<li test-id='5' class='node when pass' status='pass'>
+		<li test-id='5' class='node when skip' status='skip'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When User clicks on the login</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
-		<li test-id='6' class='node given pass' status='pass'>
+		<li test-id='6' class='node given skip' status='skip'>
 			
 			<b>Given</b>
 			
 			<span class="bdd-step-name">Given User should be at home page</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
-		<li test-id='7' class='node and pass' status='pass'>
+		<li test-id='7' class='node and skip' status='skip'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And User clicks on the Create button</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
-		<li test-id='8' class='node and pass' status='pass'>
+		<li test-id='8' class='node and skip' status='skip'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And User should be in new user page</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
-		<li test-id='9' class='node and pass' status='pass'>
+		<li test-id='9' class='node and skip' status='skip'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And User enters following details for new user</span>
 				<div class='pre'><table><tr><td>First_name</td><td>Last_name</td><td>Start_date</td><td>Email</td></tr><tr><td>Alfred</td><td>Pennyworth</td><td>1933-03-14</td><td>Pennyworth@dark.com</td></tr></table></div>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
-		<li test-id='10' class='node when pass' status='pass'>
+		<li test-id='10' class='node when skip' status='skip'>
 			
 			<b>When</b>
 			
 			<span class="bdd-step-name">When User clicks on the Add button</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
-		<li test-id='11' class='node then pass' status='pass'>
+		<li test-id='11' class='node then skip' status='skip'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then User should see "Alfred Pennyworth" in the employees list</span>
-				<div class='pre'>passed</div>
+				<div class='pre'>skipped</div>
 			
 		</li>
-		<li test-id='12' class='node and fail' status='fail'>
+		<li test-id='12' class='node and skip' status='skip'>
 			
 			<b>And</b>
 			
 			<span class="bdd-step-name">And User deletes "Alfred Pennyworth"</span>
-				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: cssContainingText(#bDelete.subButtonDelete) didn't have any matching elements at this place in the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)
-	at com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at stepDefinitions.WebScenarios.user_deletes_something(WebScenarios.java:204)
-	at ?.And User deletes "Alfred Pennyworth"(src/test/java/resources/features/test.feature:24)
-</pre></div>
+				<div class='pre'>skipped</div>
 			
 		</li>
 		<li test-id='13' class='node and skip' status='skip'>
@@ -290,9 +284,6 @@ Driver info: driver.version: RemoteWebDriver
 			
 			<span class="bdd-step-name">And User logs out</span>
 				<div class='pre'>skipped</div>
-				<div class='pre'>Taking a screenshot!</div>
-				<div class='pre'><br></div>
-				<div class='pre'><a target="_blank", href=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Wed_Jul_31_16_48_23_EET_2019.jpg><img src=C:\Users\musta\Desktop\newwp\cafetownsend\output\imgs\Wed_Jul_31_16_48_23_EET_2019.jpg height=200 width=300></img></a></div>
 			
 		</li>
 	</ul>
@@ -352,7 +343,7 @@ Driver info: driver.version: RemoteWebDriver
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-name'>java.lang.NullPointerException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -367,19 +358,13 @@ Driver info: driver.version: RemoteWebDriver
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 31, 2019 04:48:19 PM</td>
-                                                        <td class='linked' test-id='12'>creates a new user.Successfully creates a new user.And User deletes "Alfred Pennyworth"</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: cssContainingText(#bDelete.subButtonDelete) didn't have any matching elements at this place in the DOM
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: driver.version: RemoteWebDriver
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
-	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)
-	at com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at stepDefinitions.WebScenarios.user_deletes_something(WebScenarios.java:204)
-	at ?.And User deletes "Alfred Pennyworth"(src/test/java/resources/features/test.feature:24)
+                                                        <td>Jul 31, 2019 04:46:06 PM</td>
+                                                        <td class='linked' test-id='3'>creates a new user.Successfully creates a new user.Given User navigates to login page with "Firefox" browser</td>
+                                                        <td><pre><pre>java.lang.NullPointerException
+	at utils.DriverFactory.getDriver(DriverFactory.java:51)
+	at pageObjects.Page_Objects.goToLoginPage(Page_Objects.java:45)
+	at stepDefinitions.WebScenarios.user_navigates_to_login_page_with_browser(WebScenarios.java:39)
+	at ?.Given User navigates to login page with "Firefox" browser(src/test/java/resources/features/test.feature:7)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -424,19 +409,19 @@ Driver info: driver.version: RemoteWebDriver
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 31, 2019 04:48:04 PM</div>
+					<div class='panel-lead'>Jul 31, 2019 04:46:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 31, 2019 04:48:24 PM</div>
+			 		<div class='panel-lead'>Jul 31, 2019 04:46:08 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>20,337ms</div>
+					<div class='panel-lead'>1,986ms</div>
 				</div>
 			</div>
 		</div>
@@ -466,14 +451,14 @@ Driver info: driver.version: RemoteWebDriver
 				infoChild: 0,
 				exceptionsChild: 1,
 				
-				passGrandChild: 9,
+				passGrandChild: 0,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 10,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 2,
+				exceptionsGrandChild: 11,
 			};
 		</script>
 		

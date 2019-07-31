@@ -64,21 +64,22 @@ formatter.match({
   "location": "WebScenarios.user_navigates_to_login_page_with_browser(String)"
 });
 formatter.result({
-  "duration": 1693042500,
-  "error_message": "java.lang.NullPointerException\r\n\tat utils.DriverFactory.getDriver(DriverFactory.java:51)\r\n\tat pageObjects.Page_Objects.goToLoginPage(Page_Objects.java:45)\r\n\tat stepDefinitions.WebScenarios.user_navigates_to_login_page_with_browser(WebScenarios.java:39)\r\n\tat ✽.Given User navigates to login page with \"Firefox\" browser(src/test/java/resources/features/test.feature:7)\r\n",
-  "status": "failed"
+  "duration": 8343172400,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_credentials_for_login(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 105859200,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 455105500,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 14,
@@ -158,31 +159,36 @@ formatter.match({
   "location": "WebScenarios.user_should_be_at_home_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 64368800,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_create_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2298914800,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_should_be_in_new_user_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 310677500,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_enters_following_details_for_new_user(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 297399900,
+  "status": "passed"
 });
 formatter.match({
   "location": "WebScenarios.user_clicks_on_the_add_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2142323700,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -194,7 +200,8 @@ formatter.match({
   "location": "WebScenarios.user_should_see_something_in_the_employees_list(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 500365900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -206,7 +213,9 @@ formatter.match({
   "location": "WebScenarios.user_deletes_something(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4482996300,
+  "error_message": "org.openqa.selenium.NoSuchElementException: cssContainingText(#bDelete.subButtonDelete) didn\u0027t have any matching elements at this place in the DOM\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-U9KGDGS\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)\r\n\tat com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)\r\n\tat com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat stepDefinitions.WebScenarios.user_deletes_something(WebScenarios.java:204)\r\n\tat ✽.And User deletes \"Alfred Pennyworth\"(src/test/java/resources/features/test.feature:24)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "WebScenarios.user_logs_out()"
@@ -215,7 +224,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 60700,
+  "duration": 993833000,
   "status": "passed"
 });
 });

@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2614" started-at="2019-07-31T13:46:05Z" finished-at="2019-07-31T13:46:08Z">
+  <suite name="Default suite" duration-ms="20984" started-at="2019-07-31T13:48:04Z" finished-at="2019-07-31T13:48:25Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="2614" started-at="2019-07-31T13:46:05Z" finished-at="2019-07-31T13:46:08Z">
+    <test name="Default test" duration-ms="20984" started-at="2019-07-31T13:48:04Z" finished-at="2019-07-31T13:48:25Z">
       <class name="runners.TestRunner_Test">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="setUpClass" is-config="true" duration-ms="202" started-at="2019-07-31T16:46:05Z" finished-at="2019-07-31T16:46:06Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="setUpClass" is-config="true" duration-ms="235" started-at="2019-07-31T16:48:04Z" finished-at="2019-07-31T16:48:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="feature" duration-ms="1967" started-at="2019-07-31T16:46:06Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-31T16:46:08Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="feature" duration-ms="20295" started-at="2019-07-31T16:48:04Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-31T16:48:24Z">
           <params>
             <param index="0">
               <value>
@@ -24,10 +24,18 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.NullPointerException]]>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: cssContainingText(#bDelete.subButtonDelete) didn't have any matching elements at this place in the DOM
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: cssContainingText(#bDelete.subButtonDelete) didn't have any matching elements at this place in the DOM
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: RemoteWebDriver
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -54,22 +62,28 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-	at utils.DriverFactory.getDriver(DriverFactory.java:51)
-	at pageObjects.Page_Objects.goToLoginPage(Page_Objects.java:45)
-	at stepDefinitions.WebScenarios.user_navigates_to_login_page_with_browser(WebScenarios.java:39)
-	at ✽.Given User navigates to login page with "Firefox" browser(src/test/java/resources/features/test.feature:7)
+Caused by: org.openqa.selenium.NoSuchElementException: cssContainingText(#bDelete.subButtonDelete) didn't have any matching elements at this place in the DOM
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'DESKTOP-U9KGDGS', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: RemoteWebDriver
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)
+	at com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)
+	at com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at stepDefinitions.WebScenarios.user_deletes_something(WebScenarios.java:204)
+	at ✽.And User deletes "Alfred Pennyworth"(src/test/java/resources/features/test.feature:24)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="writeExtentReport" is-config="true" duration-ms="27" started-at="2019-07-31T16:46:08Z" finished-at="2019-07-31T16:46:08Z">
+        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="writeExtentReport" is-config="true" duration-ms="50" started-at="2019-07-31T16:48:24Z" finished-at="2019-07-31T16:48:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- writeExtentReport -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="tearDownClass" is-config="true" duration-ms="345" started-at="2019-07-31T16:46:08Z" finished-at="2019-07-31T16:46:08Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner_Test@2f686d1f]" name="tearDownClass" is-config="true" duration-ms="324" started-at="2019-07-31T16:48:24Z" finished-at="2019-07-31T16:48:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

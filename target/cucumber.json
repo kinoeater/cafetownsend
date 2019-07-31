@@ -21,9 +21,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1693042500,
-              "error_message": "java.lang.NullPointerException\r\n\tat utils.DriverFactory.getDriver(DriverFactory.java:51)\r\n\tat pageObjects.Page_Objects.goToLoginPage(Page_Objects.java:45)\r\n\tat stepDefinitions.WebScenarios.user_navigates_to_login_page_with_browser(WebScenarios.java:39)\r\n\tat ✽.Given User navigates to login page with \"Firefox\" browser(src/test/java/resources/features/test.feature:7)\r\n",
-              "status": "failed"
+              "duration": 8343172400,
+              "status": "passed"
             },
             "line": 7,
             "name": "User navigates to login page with \"Firefox\" browser",
@@ -40,7 +39,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 105859200,
+              "status": "passed"
             },
             "line": 8,
             "name": "User enters following credentials for login",
@@ -67,7 +67,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 455105500,
+              "status": "passed"
             },
             "line": 11,
             "name": "User clicks on the login",
@@ -86,7 +87,7 @@
         "after": [
           {
             "result": {
-              "duration": 60700,
+              "duration": 993833000,
               "status": "passed"
             },
             "match": {
@@ -99,7 +100,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 64368800,
+              "status": "passed"
             },
             "line": 16,
             "name": "User should be at home page",
@@ -110,7 +112,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2298914800,
+              "status": "passed"
             },
             "line": 17,
             "name": "User clicks on the Create button",
@@ -121,7 +124,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 310677500,
+              "status": "passed"
             },
             "line": 18,
             "name": "User should be in new user page",
@@ -132,7 +136,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 297399900,
+              "status": "passed"
             },
             "line": 19,
             "name": "User enters following details for new user",
@@ -163,7 +168,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2142323700,
+              "status": "passed"
             },
             "line": 22,
             "name": "User clicks on the Add button",
@@ -174,7 +180,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 500365900,
+              "status": "passed"
             },
             "line": 23,
             "name": "User should see \"Alfred Pennyworth\" in the employees list",
@@ -191,7 +198,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 4482996300,
+              "error_message": "org.openqa.selenium.NoSuchElementException: cssContainingText(#bDelete.subButtonDelete) didn\u0027t have any matching elements at this place in the DOM\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-U9KGDGS\u0027, ip: \u002710.0.75.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat com.paulhammant.ngwebdriver.ByAngular$BaseBy.errorIfNull(ByAngular.java:155)\r\n\tat com.paulhammant.ngwebdriver.ByAngular$BaseBy.findElement(ByAngular.java:166)\r\n\tat com.paulhammant.ngwebdriver.ByAngularCssContainingText.findElement(ByAngularCssContainingText.java:7)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat stepDefinitions.WebScenarios.user_deletes_something(WebScenarios.java:204)\r\n\tat ✽.And User deletes \"Alfred Pennyworth\"(src/test/java/resources/features/test.feature:24)\r\n",
+              "status": "failed"
             },
             "line": 24,
             "name": "User deletes \"Alfred Pennyworth\"",
