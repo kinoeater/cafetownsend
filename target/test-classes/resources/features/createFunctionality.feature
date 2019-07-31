@@ -24,7 +24,7 @@ Feature: Create New Employee functionality tests
      # This one deletes newly added employee, so same credentials can be used next time 
       And User logs out
   
-  Scenario: Missing user name
+  Scenario: User leaves the user name area empty while creating new user
   
     Given User should be at home page
       And User clicks on the Create button
@@ -36,7 +36,7 @@ Feature: Create New Employee functionality tests
      Then User should still be at new user page
       And User logs out
   
-  Scenario: Missing Last Name
+  Scenario: User leaves the last name area empty while creating new user
   
     Given User should be at home page
       And User clicks on the Create button
@@ -48,7 +48,7 @@ Feature: Create New Employee functionality tests
      Then User should still be at new user page
       And User logs out
   
-  Scenario: Missing Start Date
+  Scenario: User leaves the Start Date area empty while creating new user
   
     Given User should be at home page
       And User clicks on the Create button
@@ -60,7 +60,7 @@ Feature: Create New Employee functionality tests
      Then User should still be at new user page
       And User logs out
   
-  Scenario: Missing Email or incorrect email format
+  Scenario: User enters incorrect email format or leaves the email area empty 
   
     Given User should be at home page
       And User clicks on the Create button
@@ -72,7 +72,7 @@ Feature: Create New Employee functionality tests
      Then User should still be at new user page
       And User logs out    
   
-  Scenario: Hitting enter key instead of Add button
+  Scenario: User hitting enter key instead of using Add button while creating new user
   
     Given User should be at home page
       And User clicks on the Create button
@@ -86,7 +86,7 @@ Feature: Create New Employee functionality tests
      # This one deletes newly added employee, so same credentials can be used next time  
       And User logs out
       
-  Scenario: Using incorrect date format
+  Scenario: User enters incorrect date format
   
     Given User should be at home page
       And User clicks on the Create button

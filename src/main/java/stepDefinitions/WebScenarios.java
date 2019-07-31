@@ -203,10 +203,8 @@ public class WebScenarios extends Page_Objects {
             } catch (NoAlertPresentException e) {
 
                 e.printStackTrace();
-                Alert alert = driver.switchTo().alert();
-                System.out.println("Alert message:  " + alert.getText());
-                alert.accept();
-                Assert.assertFalse(false);
+
+
 
             }
 
